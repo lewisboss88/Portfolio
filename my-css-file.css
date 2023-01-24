@@ -1,0 +1,184 @@
+body {
+    margin: 0;
+    background: #2A2734;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    color: #fefefe;
+    display: flex;
+    flex-direction: column;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+h1, h2, h3, h4, h5, p{
+    color: black;
+    padding-bottom: 30px;
+}
+.bigText{ font-size: 78px;/* border: 1px solid red;*/}
+.medText{ font-size: 40px;}
+.normText{font-size: 20px;}
+.smallText{font-size: 14px;/* border: 1px solid red; */}
+
+
+.header{
+    /*border: 1px solid red; */
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    display: flex;
+
+}
+.foot{
+    position: fixed;
+    width: 100%;
+    text-align: right;
+    right: 0;
+    bottom: 0;
+}
+.logo{
+    /*border: 1px solid red;*/
+    position: relative;
+    width: 169px;
+    height: 140px;
+    background-size: cover;
+    background-image: url("logo_2.jpg");
+    top: 0;
+    left: 0;
+}
+
+.title{
+    /*border: 1px solid red;*/ 
+    position: relative;
+    width: 75%;
+}
+
+.menu{
+    /*border: 1px solid red; */
+    text-align: right;
+    position: relative;
+    right: 0;
+    top: 0;
+    
+}
+.container {
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0 auto;
+    top: 200px;
+    perspective: 1000px;
+}
+
+.carousel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: rotate360 60s infinite forwards linear;
+}
+.carousel:hover{
+    animation-play-state: paused;
+}
+
+.image {
+    position: absolute;
+    width: 300px;
+    height: 187px;
+    top: 20px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+    grid-template: minmax(0, 1fr) / minmax(0, 1fr);
+    grid-template-areas: "stack";
+    display: grid;
+}
+
+.image > img{
+    grid-area: stack;
+    object-fit: cover;
+    place-self: stretch;
+}
+.image > figcaption{
+    grid-area: stack;
+    align-self: end;
+    justify-self: stretch;
+
+    background-color: #27273980;
+    color: white;
+
+    text-align: end;
+    padding: 12px;
+
+    backdrop-filter: blur(6px);
+
+}
+
+span {
+    margin: auto;
+    font-size: 2rem;
+}
+
+.image:nth-child(1) {
+    /*background-image: url("me.jpg");*/
+    transform: rotateY( 0deg) translateZ(300px);
+}
+
+.image:nth-child(2) {
+    /*background-image: url("webDevelopment.jpg");*/
+    transform: rotateY( 60deg) translateZ(300px);
+}
+
+.image:nth-child(3) {
+    /*background-image: url("image_url");*/
+    transform: rotateY( 120deg) translateZ(300px);
+}
+
+.image:nth-child(4) {
+    /*background-image: url("barwork.jpg");*/
+    transform: rotateY(180deg) translateZ(300px);
+}
+
+.image:nth-child(5) {
+    /*background-image: url("travel.jpg");*/
+    transform: rotateY(240deg) translateZ(300px);
+}
+
+
+
+.image:nth-child(6) {
+    /*background-image: url("image_url");*/
+    transform: rotateY(300deg) translateZ(300px);
+}
+
+
+.worldmap{
+    position:absolute;
+    background-color: neon;
+    width: 100%;
+    
+    top: 200px;
+}
+
+.area:hover{
+    background-color: blue;
+}
+@keyframes rotate360 {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(-360deg);
+    }
+}
+
+*,
+*::before,
+*::after{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
