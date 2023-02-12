@@ -59,11 +59,56 @@ h1, h2, h3, h4, h5, p{
 .menu{
     /*border: 1px solid red; */
     text-align: right;
-    position: relative;
-    right: 0;
+    position: fixed;
+    right: 2rem;
+    width:0; ;
     top: 0;
+    z-index: 1;
+    transition: 0.5s;
+    overflow-x: hidden;
+    background-color: #111;
+    padding-top: 30px;
+    backdrop-filter: blur(6px);
     
 }
+/*Menu links properties */
+.menu a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.menu a:hover{
+    color: #f1f1f1;
+}
+
+.menu .closebtn{
+    position:absolute;
+    top: 0;
+    right: 5px;
+    font-size: 36px;
+    margin-left: 50px;
+    
+}
+
+.openbtn{
+font-size: 20px;
+widows: 210px;
+cursor:pointer;
+border-color: #111;
+color: #f1f1f1;
+padding: 10px 15px;
+border: none;
+display: block;
+}
+
+.openbtn:hover{
+    background-color: #444;
+}
+
 .container {
     position: relative;
     width: 320px;
