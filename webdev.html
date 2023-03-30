@@ -14,23 +14,26 @@
         <link rel="stylesheet" href="my-css-file.css">
         <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet"> 
     </head>
-<body style="background-color: white;">
-    <div class="header" style="background: #2A2734;">
-        <div class="logo"></div>
-        <div class="title">
-            <div class="bigText" style="margin-top: 30px;">The Simao Hub</div>
+<body>
+        <div class="header">
+            <div class="logo"></div>
+            <div class="title" style="margin-top: 30px;">The Simao Hub </div>
+            <a href="javascript:void(0)" id="burger" class="openbtn" onclick="openNav()">&#9776;</a>
+            <a href="javascript:void(0)" id="butX" class="closebtn" onclick="closeNav()">&times;</a>
+            <div id="side" class="menu">  
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="me.html">Me</a></li>
+                    <li><a href="webdev.html">Web</a></li>
+                    <li><a href="coding.html">Coding</a></li>
+                    <li><a href="barwork.html">Bar</a></li>
+                    <li><a href="travel.html">Travels</a></li>
+                </ul>
+            </div>
         </div>
-        <ul class="menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="">Home2</a></li>
-            <li><a href="">Home3</a></li>
-            <li><a href="">Home4</a></li>
-            <li><a href="">Home3</a></li>
-            <li><a href="">Home4</a></li>
-        </ul>
-    </div>
     <div class="foot">
         <div class="smallText" style="color: black;">Website property of Simao De Jesus.</div>
     </div>
+    <script src="menu.js"></script>
 </body>
 </html>

@@ -14,23 +14,73 @@
         <link rel="stylesheet" href="my-css-file.css">
         <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet"> 
     </head>
-<body style="background-color: white;">
-    <div class="header" style="background: #2A2734;">
-        <div class="logo"></div>
-        <div class="title">
-            <div class="bigText" style="margin-top: 30px;">The Simao Hub</div>
+<body>
+        <div class="header">
+            <div class="logo"></div>
+            <div class="title" style="margin-top: 30px;">The Simao Hub </div>
+            <a href="javascript:void(0)" id="burger" class="openbtn" onclick="openNav()">&#9776;</a>
+            <a href="javascript:void(0)" id="butX" class="closebtn" onclick="closeNav()">&times;</a>
+            <div id="side" class="menu">  
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="me.html">Me</a></li>
+                    <li><a href="webdev.html">Web</a></li>
+                    <li><a href="coding.html">Coding</a></li>
+                    <li><a href="barwork.html">Bar</a></li>
+                    <li><a href="travel.html">Travels</a></li>
+                    <li><a href="contact.html">Contacts</a></li>
+                </ul>
+            </div>
         </div>
-        <ul class="menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="">Home2</a></li>
-            <li><a href="">Home3</a></li>
-            <li><a href="">Home4</a></li>
-            <li><a href="">Home3</a></li>
-            <li><a href="">Home4</a></li>
-        </ul>
-    </div>
+        <div class="containerContent">
+            <div class="sectionContent">
+                <div class="content">
+                    <img src="me/meviews.jpg" alt="">
+                </div>
+                <div class="content">
+                    <p>Welcome to my portfolio website! My name is Simao, and I am a Programmer with a passion for Web Development. Through this website, I aim to showcase my skills, experience, and creativity in a visually appealing and engaging way. Whether you are a potential employer, a collaborator, or just browsing, I invite you to explore my work and get to know me better. From web design to bar consultancy service , I am committed to delivering high-quality solutions that exceed expectations and make a lasting impact. This website will contain:</p>
+                    <br>
+                    <ul>
+                        <li>Website design elements, code snippets, CSS, JS, HTML <a href="webdev.html"> ----> </a></li><br>
+                        <li>Personal coding projects, C++, Java  <a href="coding.html"> ----> </a></li><br>
+                        <li>Personal Cocktails and Mocktails showcase <a href="barwork.html"> ----> </a></li><br>
+                        <li>Personal photo gallery around the world <a href="travel.html"> ----> </a></li><br>
+                        <li>Social network and contact information  <a href="contact.html"> ----> </a></li><br>
+                    </ul>
+                </div>
+            </div>
+            <div class="sectionContent">
+                <div class="content"></div>
+                <div class="content">
+                    <img src="" alt="">
+                </div>
+            </div>
+            <div class="sectionContent">
+                <div class="content">
+                    <img src="me/cocktailmaking.jpg" alt="">
+                </div>
+                <div class="content">
+                    <p>As a bartender with over 8 years of experience, I have worked my way up from a simple bartender to a supervisor, cellar manager, bar manager, consultant freelancer, trainer, and menu designer.</p>
+                    <br>
+                    <ul>
+                        <li>Throughout my career, I have developed a range of skills in mixology, customer service, and efficient bar operations. As a supervisor, I have managed teams, trained staff, and ensured quality control. Additionally, my experience as a cellar manager has given me a deep understanding of inventory management, ordering, and storage of beverages.</li> <br>
+                        <li>As a bar manager, I have overseen all aspects of the bar, including staffing, inventory, operations, and financials. I have also designed and implemented innovative marketing strategies, collaborated with other departments to enhance the guest experience, and created unique cocktail menus that have become signature offerings at various establishments.</li> <br>
+                        <li>In my role as a consultant freelancer, I have shared my expertise with other establishments, providing recommendations on bar design, operations, and menu development. As a trainer, I have educated staff on best practices for mixology, service, and sales.</li> <br>
+                        <li>Finally, as a menu designer, I have utilized my keen eye for design and deep understanding of flavor profiles to develop creative and unique cocktail menus.</li> <br>
+                    </ul>
+                    <p>Overall, I am a seasoned professional with a diverse skill set and extensive experience, confident in my ability to advise, lead, and innovate in any bar or hospitality-related setting.</p>
+                    
+                   
+                </div>
+            </div>
+            <div class="sectionContent">
+                <div class="content"></div>
+                <div class="content"></div>
+            </div>
+        </div>
     <div class="foot">
         <div class="smallText" style="color: black;">Website property of Simao De Jesus.</div>
     </div>
+<script src="menu.js"></script>
 </body>
 </html>
