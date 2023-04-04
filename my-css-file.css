@@ -509,7 +509,7 @@ map area:hover{
     display: flex;
     width: 50%;
     /*border: 1px solid black;*/
-    margin: 6px;
+    margin: 13px;
    
     height: auto;
     flex-direction: column;
@@ -531,7 +531,7 @@ map area:hover{
 
 .content img{
     object-fit: fill;
-    margin-right: 6px;
+    margin-right: 23px;
 }
 
 .content a{
@@ -605,8 +605,83 @@ map area:hover{
     border: 1px dashed gray;
     padding: 5px 5px 5px 5px;
     color: blue;
+}/*-------------------------------DEV-and Project------------------------------------*/
+.containerDev{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+
+}
+.cardD{
+    display: flex;
+    border: #111;
+    border-width: 1px 9px 9px 1px ;
+    border-style: solid double double solid;
+    border-radius: 7%;
+    min-width: 340px;
+    width: 600px;
+    height: 400px;
+    margin: 3px;
+    
+}
+.face{
+    width: inherit;
+    height: inherit;
+    border: 1px solid #1cc7d0;
+    border-radius: inherit;
+    position: absolute;
+}
+.changeFace{
+    position: absolute;
+    bottom: 2rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
 }
 
+.btFace{
+    font-size: 40px;
+    border: none;
+    background-color: transparent;
+    color: #111;
+}
+
+.btFace:hover{
+   color:#1cc7d0;
+    cursor: pointer;
+}
+
+#prevFace{
+    left: 1rem;
+    position: absolute;
+}
+#nextFace{
+    right: 2rem;
+    position: absolute;
+
+}
+
+.H{
+    visibility: hidden;
+}
+.C{
+    visibility: hidden;
+}
+.J{
+    visibility: hidden;
+}
+
+.item #prevFace{
+    display: none;
+}
+
+.J #nextFace{
+    display: none;
+}
 /*-----------------------------RESPONSIVE------------------------------------*/
 @media screen and (max-width: 480px) {
     .title {
