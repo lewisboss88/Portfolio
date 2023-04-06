@@ -1,0 +1,176 @@
+/*-----------------PREVIEW-MENU-------------*/
+.faceItem{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.previewMenu a{
+   
+        padding: 8px 8px 8px 10px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    
+
+}
+ .previewMenu a:hover{
+    color: #f1f1f1;
+}
+.previewMenu{
+    text-align: center;
+    transition: transform 0.5s;
+    overflow-x: hidden;
+    background-color: #111;
+    padding-top: 30px;
+    backdrop-filter: blur(6px);
+    width: 130px;
+    height: 226px;
+    transform: scale(0);
+    position: absolute;
+    bottom: 106px;
+}
+
+.previewMenuBurger{
+font-size: 20px;
+cursor:pointer;
+border-color: #111;
+color: #f1f1f1;
+padding: 10px 15px;
+border: none;
+display: block;
+position: absolute;
+z-index: 2;
+background-color: #111;
+position: relative;
+left: 102px;
+top: 20px;
+}
+
+
+.previewMenuClose{
+    font-size: 36px;
+    display: block;
+    background-color: #111;
+    position: relative;
+    left: 102px;
+    bottom: -74px;
+
+}
+
+.changePreviewMenu{
+    font-size: 36px;
+    display: block;
+    background-color: #111;
+    position: relative;
+    left: 102px;
+    bottom: -134px;
+}
+
+.changeMenu .previewMenu ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+}
+
+.changeMenu .previewMenu ul a{
+    padding: 17px 14px 8px 10px;
+}
+
+.changeMenu .previewMenu{
+    bottom: 88px;
+    overflow: auto;
+    width: 80%;
+    height: 74px;
+    padding-top: 10px;
+}
+
+.changeMenu .previewMenuBurger{
+    left: -106px;
+    top: -16px;
+}
+
+.changeMenu .previewMenuClose{
+    left: 3px;
+    bottom: 55px
+}
+
+.changeMenu .changePreviewMenu{
+    bottom: 90px;
+    left: 108px;
+    background-color: red;
+}
+
+/*------------ROTATING---NAVBAR-------------*/
+.faceItem2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.previewMenuWraper{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    transition: transform 0.5s;
+    transform: scale(0) rotate(-180deg);
+    
+}
+
+.changeWraper .previewMenuWraper{
+    transform: scale(1) rotate(0);
+}
+.previewOpenWraper{
+    z-index: 1;
+}
+
+.previewIcon, .previewOpenWraper{
+    border: 1px solid;
+    border-color: red aqua rgb(38, 45, 139) rgb(28, 28, 177);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #111;
+    cursor: pointer;
+}
+
+.previewIcon:nth-child(1){
+    inset: 1px 120px;
+}
+.previewIcon:nth-child(2){
+    inset: 47px 213px;
+}
+.previewIcon:nth-child(3){
+    inset: 119px 238px;
+}
+.previewIcon:nth-child(4){
+    inset: 196px 209px;
+}
+.previewIcon:nth-child(5){
+    inset: 237px 119px;
+}
+.previewIcon:nth-child(6){
+    inset:196px 31px;
+}
+.previewIcon:nth-child(7){
+    inset: 119px 1px;
+}
+.previewIcon:nth-child(8){
+    inset:47px 31px;
+}
+
+
+
