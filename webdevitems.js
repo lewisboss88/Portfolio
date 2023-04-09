@@ -19,7 +19,4 @@ function previewMenuOpenClose(){
     if(document.getElementById("previewOpenWraper").getAttribute("class") == "fas fa-bars"){
         document.getElementById("previewOpenWraper").setAttribute("class", "fas fa-x");
     }else document.getElementById("previewOpenWraper").setAttribute("class", "fas fa-bars");
-    
-    
-
 }

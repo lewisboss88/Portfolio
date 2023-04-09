@@ -501,7 +501,7 @@ map area:hover{
 
 .sectionContent{
     display: flex;
-    width: 80%;
+    width: 90%;
     /*border: 1px solid red;*/
 }
 
@@ -513,7 +513,15 @@ map area:hover{
    
     height: auto;
     flex-direction: column;
+}
 
+.secondary{
+    background: conic-gradient(at top right, slategray, white);
+    border: 1px double dodgerblue;
+    border-radius: 3%;
+    transform: scale(0) matrix(0,1,1,0,0,0);
+    transition: transform 1200ms;
+    display: none;
 }
 .content p{
     text-align: justify;
@@ -537,6 +545,23 @@ map area:hover{
 .content a{
     color: blue;
 }
+.content-btn{
+    padding-bottom: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+.contentBtn{
+    display: flex;
+    justify-content: space-between;
+}
+.content-button{
+    color: dodgerblue;
+    padding-right: 32px;
+    padding-left: 32px;
+    cursor: pointer;
+}
+
+
 /*-------------------------------CONTACT------------------------------------*/
 
 .containerContact{
@@ -650,9 +675,12 @@ map area:hover{
 }
 .textCode{
     border: none;
-    text-align: justify;
+    text-align: left;
     width: 80%;
     height: 268px;
+    font-family: fantasy;
+    margin: auto;
+
     
 }
 .changeFace{
@@ -715,13 +743,16 @@ map area:hover{
     .menu{
         padding-top: 11px;
     }
+    .openbtn{
+        color: dodgerblue;
+    }
     
     .closebtn{
         top: 39px;
     }
     .sectionContent{
         flex-wrap: wrap;
-        width: 100%;
+       
     }
     .content{
         width: 100%;

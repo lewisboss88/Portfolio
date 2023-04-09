@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="my-css-file.css">
         <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     </head>
 <body>
         <div class="header">
@@ -41,26 +42,30 @@
                     <p>Welcome to my portfolio website! My name is Simao, and I am a Programmer with a passion for Web Development. Through this website, I aim to showcase my skills, experience, and creativity in a visually appealing and engaging way. Whether you are a potential employer, a collaborator, or just browsing, I invite you to explore my work and get to know me better. From web design to bar consultancy service , I am committed to delivering high-quality solutions that exceed expectations and make a lasting impact. This website will contain:</p>
                     <br>
                     <ul>
-                        <li>Website design elements, code snippets, CSS, JS, HTML <a href="webdev.html"> ----> </a></li><br>
-                        <li>Personal coding projects, C++, Java  <a href="coding.html"> ----> </a></li><br>
-                        <li>Personal Cocktails and Mocktails showcase <a href="barwork.html"> ----> </a></li><br>
-                        <li>Personal photo gallery around the world <a href="travel.html"> ----> </a></li><br>
+                        <li>Web Development & Coding Section  <a href="javascpript:void(0)" onclick="openSecondary(0)"> ----> </a></li><br>
+                        <li>Bar Section <a href="javascpript:void(0)" onclick="openSecondary(1)"> ----> </a></li><br>
+                        <li>Traveling & Photography Section<a href="javascpript:void(0)" onclick="openSecondary(2)"> ----> </a></li><br>
                         <li>Social network and contact information  <a href="contact.html"> ----> </a></li><br>
                     </ul>
                 </div>
             </div>
-            <div class="sectionContent">
+            <div class="sectionContent secondary">
                 <div class="content"></div>
                 <div class="content">
                     <img src="" alt="">
+                    <div class="contentBtn">
+                        <a href="webdev.html" class="content-button">Go To My Web-Items <i class="fa-solid fa-globe"></i></a> 
+                        <a href="coding.html" class="content-button">Go To My Projects <i class="fa-solid fa-laptop-code"></i></a> 
+                        <span class="content-button" href="javascript:void(0)" onclick="closeSecondary(0)">Close Card <i class="fa-solid fa-minus"></i></span>
+                    </div>
                 </div>
             </div>
-            <div class="sectionContent">
+            <div class="sectionContent secondary">
                 <div class="content">
                     <img src="me/cocktailmaking.jpg" alt="">
                 </div>
                 <div class="content">
-                    <p>As a bartender with over 8 years of experience, I have worked my way up from a simple bartender to a supervisor, cellar manager, bar manager, consultant freelancer, trainer, and menu designer.</p>
+                    <p>As a bartender with almost a decade of experience, I have worked my way up from a simple bartender to a supervisor, cellar manager, bar manager, consultant freelancer, trainer, and menu designer.</p>
                     <br>
                     <ul>
                         <li>Throughout my career, I have developed a range of skills in mixology, customer service, and efficient bar operations. As a supervisor, I have managed teams, trained staff, and ensured quality control. Additionally, my experience as a cellar manager has given me a deep understanding of inventory management, ordering, and storage of beverages.</li> <br>
@@ -69,18 +74,41 @@
                         <li>Finally, as a menu designer, I have utilized my keen eye for design and deep understanding of flavor profiles to develop creative and unique cocktail menus.</li> <br>
                     </ul>
                     <p>Overall, I am a seasoned professional with a diverse skill set and extensive experience, confident in my ability to advise, lead, and innovate in any bar or hospitality-related setting.</p>
+                    <div class="contentBtn">
+                        <a href="barwork.html" class="content-button">Go To My Cocktails <i class="fa-solid fa-martini-glass-citrus"></i></a> 
+                        <span class="content-button" href="javascript:void(0)" onclick="closeSecondary(1)">Close Card <i class="fa-solid fa-minus"></i></span>
+                    </div>
                     
                    
                 </div>
             </div>
-            <div class="sectionContent">
+            <div class="sectionContent secondary">
                 <div class="content"></div>
-                <div class="content"></div>
+                <div class="content">
+                    <img src="" alt="">
+                    <div class="contentBtn">
+                        <a href="travel.html" class="content-button">Go To My Travels <i class="fa-solid fa-plane"></i></a> 
+                        <span class="content-button" href="javascript:void(0)" onclick="closeSecondary(2)">Close Card <i class="fa-solid fa-minus"></i></span>
+                    </div>
+                </div>
             </div>
         </div>
     <div class="foot">
         <div class="smallText" style="color: black;">Website property of Simao De Jesus.</div>
     </div>
 <script src="menu.js"></script>
+<script>
+    const secondary = document.getElementsByClassName("secondary");
+    function openSecondary(i){
+        secondary[i].style.display="flex";
+        setTimeout(() => {secondary[i].style.transform="scale(1)";}, 500);
+        
+    }
+    function closeSecondary(i){
+        secondary[i].style.transform="scale(0) matrix(0,1,1,0,0,0)";
+        setTimeout(() => {secondary[i].style.display="none";}, 500);
+        
+    }
+</script>
 </body>
 </html>
