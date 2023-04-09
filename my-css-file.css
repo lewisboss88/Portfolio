@@ -540,6 +540,7 @@ map area:hover{
 .content img{
     object-fit: fill;
     margin-right: 23px;
+    border-radius: 8%;
 }
 
 .content a{
