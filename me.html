@@ -114,6 +114,12 @@
 <script>
     const secondary = document.getElementsByClassName("secondary");
     function openSecondary(i){
+        for(let j =0; j < secondary.length; j++){
+            if(j != i){
+                closeSecondary(j);
+            }
+
+        }
         secondary[i].style.display="flex";
         setTimeout(() => {secondary[i].style.transform="scale(1)";}, 500);
         
