@@ -6,6 +6,7 @@ body {
     color: #fefefe;
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
     
 }
 a{
@@ -33,13 +34,37 @@ h1, h2, h3, h4, h5, p{
     background: #2A2734;
 
 }
-.foot{
-    position: fixed;
+footer{
+    position: relative;
     width: 100%;
-    text-align: right;
-    right: 0;
-    bottom: 0;
+    margin-top: auto;
+    background: #2A2734;
+    color: white;
+    --mask:
+    radial-gradient(30.34px at 50% 42.90px,#000 99%,#0000 101%) calc(50% - 44px) 0/88px 100%,
+    radial-gradient(30.34px at 50% -20.9px,#0000 99%,#000 101%) 50% 22px/88px 100% repeat-x;
+     -webkit-mask: var(--mask);
+          mask: var(--mask);
+
 }
+footer p{
+    color: white;
+    padding-bottom: 8px;
+    font-size: 14px;
+}
+
+footer a:hover{
+    color: aquamarine;
+    text-decoration: underline;
+}
+
+.ft-wrapper{
+    max-width: 100%;
+    margin-inline: auto;
+    padding-inline: 1rem;
+    padding-top: 3rem;
+}
+
 .logo{
     /*border: 1px solid red;*/
     position: relative;
@@ -524,7 +549,7 @@ map area:hover{
     display: none;
 }
 .content p{
-    text-align: justify;
+    text-align: left;
 }
 .content ul{
     list-style:inside;
@@ -765,5 +790,9 @@ map area:hover{
         display: flex;
         flex-direction: row;
         justify-content: center;
+    }
+    footer a{
+        color: aquamarine;
+        text-decoration: underline;
     }
 }

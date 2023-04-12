@@ -1,3 +1,5 @@
+const year =document.querySelector("#cYear");
+year.innerHTML = new Date().getFullYear();
 function openNav(){
     if (window.innerWidth > 815){ 
     document.getElementById("side").style.width="100px";

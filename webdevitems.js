@@ -20,3 +20,24 @@ function previewMenuOpenClose(){
         document.getElementById("previewOpenWraper").setAttribute("class", "fas fa-x");
     }else document.getElementById("previewOpenWraper").setAttribute("class", "fas fa-bars");
 }
+
+/* digital analogic clock*/
+
+const thh =document.querySelector("#hours");
+const tmm =document.querySelector("#minutes");
+const lmn = document.querySelector(".lmn");
+const lhr = document.querySelector(".lhr");
+
+const currentTime = () => {
+    let hh = new Date().getHours(); 
+    let mm = new Date().getMinutes(); 
+    thh.innerHTML= hh;
+    tmm.innerHTML= mm;
+    let rotationM = (mm * 6) % 360; 
+    let rotationH = (hh * 30) % 360;
+    lmn.style.transform =`rotateZ( ${rotationM}deg)`; 
+    lhr.style.transform =`rotateZ( ${rotationH}deg)`;  
+}
+
+currentTime();
+setInterval(currentTime, 1000);
