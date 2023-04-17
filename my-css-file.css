@@ -500,9 +500,6 @@ map area:hover{
     border-color: transparent;
     border-radius: 30%;
     background-color: transparent;
-    -webkit-box-shadow: 0 0 88px 5px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0 0 88px 5px rgba(0, 0, 0, 0.75);
-     box-shadow: 0 0 88px 5px rgba(0, 0, 0, 0.75);
      height: 100%;
      font-size: 30px;
      top: 0;
@@ -526,8 +523,6 @@ map area:hover{
     flex-direction: row;
     justify-content: center;
    /* border: 1px solid blue;*/
-
-
 }
 
 .sectionContent{
@@ -541,11 +536,14 @@ map area:hover{
     width: 50%;
     /*border: 1px solid black;*/
     margin: 13px;
-   
     height: auto;
     flex-direction: column;
 }
 
+.dirrectionMe{
+    cursor: pointer;
+    color: blue;
+}
 .secondary{
     background: conic-gradient(at top right, slategray, white);
     border: 1px double dodgerblue;
