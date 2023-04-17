@@ -21,8 +21,8 @@
     </head>
 <body>
         <div class="header">
-            <div class="logo"></div>
-            <div class="title" style="margin-top: 30px;">The Simao Hub </div>
+            <div class="logo"><img src="logo_2.jpg" alt=""></div>
+            <div class="title">The Simao Hub </div>
             <a href="javascript:void(0)" id="burger" class="openbtn" onclick="openNav()">&#9776;</a>
             <a href="javascript:void(0)" id="butX" class="closebtn" onclick="closeNav()">&times;</a>
             <div id="side" class="menu">  
@@ -64,22 +64,22 @@
                 <div class="face H item1">
                     <h1>Html Code</h1>
                     <textarea name="" readonly="true" class="textCode">
-                        <div class="faceItem">
-                            <div class="previewMenu">
-                                <ul>
-                                    <li><a href="">Link1</a></li>
-                                    <li><a href="">Link2</a></li>
-                                    <li><a href="">Link3</a></li>
-                                    <li><a href="">Link4</a></li>
-                                    <li><a href="">Link5</a></li>
-                                </ul>
-                            </div>
-                            <div class="previewMenuBtn">
-                                <a class="previewMenuBurger" href="javascript:void(0)" onclick="previewOpenMenu(1)">&#9776;</a>
-                                <a class="previewMenuClose" href="javascript:void(0)" onclick="previewOpenMenu(0)">&times;</a>
-                                <a class="changePreviewMenu" href="javascript:void(0)" onclick="previewOpenMenu(2)"> + </a>
-                            </div>
-                        </div>
+<div class="faceItem">
+ <div class="previewMenu">
+  <ul>
+     <li><a href="">Link1</a></li>
+     <li><a href="">Link2</a></li>
+     <li><a href="">Link3</a></li>
+     <li><a href="">Link4</a></li>
+     <li><a href="">Link5</a></li>
+  </ul>
+</div>
+<div class="previewMenuBtn">
+<a class="previewMenuBurger" href="javascript:void(0)" onclick="previewOpenMenu(1)">&#9776;</a>
+<a class="previewMenuClose"  href="javascript:void(0)" onclick="previewOpenMenu(0)">&times;</a>
+<a class="changePreviewMenu" href="javascript:void(0)" onclick="previewOpenMenu(2)"> + </a>
+</div>
+</div>
                     </textarea>
                     <div class="changeFace">
                         <span href="javascript:void(0)" class="btFace" id="prevFace"onclick="moveCard(0,-1)"><---</span>
@@ -89,100 +89,93 @@
                 <div class="face C item1">
                     <h1>Css Code</h1>
                     <textarea name="" readonly="true" class="textCode">
-                        .previewMenu a{
-   
-                            padding: 8px 8px 8px 10px;
-                            text-decoration: none;
-                            font-size: 20px;
-                            color: #818181;
-                            display: block;
-                            transition: 0.3s;
-                    }
-                     .previewMenu a:hover{
-                        color: #f1f1f1;
-                    }
-                    .previewMenu{
-                        text-align: center;
-                        transition: transform 0.5s;
-                        overflow-x: hidden;
-                        background-color: #111;
-                        padding-top: 30px;
-                        backdrop-filter: blur(6px);
-                        width: 130px;
-                        height: 226px;
-                        transform: scale(0);
-                        position: absolute;
-                        bottom: 106px;
-                    }
+.previewMenu a{
+padding: 8px 8px 8px 10px;
+text-decoration: none;
+font-size: 20px;
+color: #818181;
+display: block;
+transition: 0.3s; }
+                     
+.previewMenu a:hover{
+  color: #f1f1f1;
+}
+
+.previewMenu{
+text-align: center;
+transition: transform 0.5s;
+overflow-x: hidden;
+background-color: #111;
+padding-top: 30px;
+backdrop-filter: blur(6px);
+width: 130px;
+height: 226px;
+transform: scale(0);
+position: absolute;
+bottom: 106px; }
                     
-                    .previewMenuBurger{
-                    font-size: 20px;
-                    cursor:pointer;
-                    border-color: #111;
-                    color: #f1f1f1;
-                    padding: 10px 15px;
-                    border: none;
-                    display: block;
-                    position: absolute;
-                    z-index: 2;
-                    background-color: #111;
-                    position: relative;
-                    left: 102px;
-                    top: 20px;
-                    }
+.previewMenuBurger{
+font-size: 20px;
+cursor:pointer;
+border-color: #111;
+color: #f1f1f1;
+padding: 10px 15px;
+border: none;
+display: block;
+position: absolute;
+z-index: 2;
+background-color: #111;
+position: relative;
+left: 102px;
+top: 20px; }
+
+.previewMenuClose{
+font-size: 36px;
+display: block;
+background-color: #111;
+position: relative;
+left: 102px;
+bottom: -74px; }
                     
+.changePreviewMenu{
+font-size: 36px;
+display: block;
+background-color: #111;
+position: relative;
+left: 102px;
+bottom: -134px;
+}
                     
-                    .previewMenuClose{
-                        font-size: 36px;
-                        display: block;
-                        background-color: #111;
-                        position: relative;
-                        left: 102px;
-                        bottom: -74px; 
-                    }
+.changeMenu .previewMenu ul{
+ display: flex;
+flex-direction: row;
+justify-content: center;
+}
                     
-                    .changePreviewMenu{
-                        font-size: 36px;
-                        display: block;
-                        background-color: #111;
-                        position: relative;
-                        left: 102px;
-                        bottom: -134px;
-                    }
+.changeMenu .previewMenu ul a{
+padding: 17px 14px 8px 10px; }
                     
-                    .changeMenu .previewMenu ul{
-                            display: flex;
-                            flex-direction: row;
-                            justify-content: center;
-                    }
+.changeMenu .previewMenu{
+bottom: 88px;
+overflow: auto;
+width: 80%;
+height: 74px;
+padding-top: 10px; }
                     
-                    .changeMenu .previewMenu ul a{
-                        padding: 17px 14px 8px 10px;
-                    }
+.changeMenu .previewMenuBurger{
+left: -106px;
+top: -16px;
+}
                     
-                    .changeMenu .previewMenu{
-                        bottom: 88px;
-                        overflow: auto;
-                        width: 80%;
-                        height: 74px;
-                        padding-top: 10px;
-                    }
+.changeMenu .previewMenuClose{
+left: 3px;
+bottom: 55px
+}
                     
-                    .changeMenu .previewMenuBurger{
-                        left: -106px;
-                        top: -16px;
-                    }
-                    
-                    .changeMenu .previewMenuClose{
-                        left: 3px;
-                        bottom: 55px
-                    }
-                    
-                    .changeMenu .changePreviewMenu{
-                        bottom: 90px;
-                        left: 108px;
-                        background-color: red;
-                    }
+.changeMenu .changePreviewMenu{
+bottom: 90px;
+left: 108px;
+background-color: red; }                   
                     </textarea>
                     <div class="changeFace">
                         <span href="javascript:void(0)" class="btFace" id="prevFace"onclick="moveCard(0,-1)"><---</span>
@@ -192,20 +185,20 @@
                 <div class="face J item1">
                     <h1>Js Code</h1>
                     <textarea name="" readonly="true" class="textCode">
-                       function previewOpenMenu(i) {
-                            const menuP = document.getElementsByClassName("previewMenu");
-                            switch(i){
-                                case 0:
+function previewOpenMenu(i) {
+     const menuP = document.getElementsByClassName("previewMenu");
+    switch(i){
+        case 0:
                                     menuP[0].style.transform = "scale(0)";
-                                break;
-                                case 1: 
+        break;
+         case 1: 
                                     menuP[0].style.transform = "scale(1)";
-                                break;
-                                case 2:
-                                    document.querySelector(".faceItem").classList.toggle("changeMenu");
+         break;
+        case 2:
+             document.querySelector(".faceItem").classList.toggle("changeMenu");
                         
-                            }
-                        }
+     }
+ }
                     </textarea>
                     <div class="changeFace">
                         <span href="javascript:void(0)" class="btFace" id="prevFace"onclick="moveCard(0,-1)"><---</span>
@@ -237,19 +230,37 @@
                 <div class="face H item2">
                     <h1>Html Code</h1>
                     <textarea name="" readonly="true" class="textCode">
-                        <div class="faceItem2">
-                            <span  class="previewOpenWraper"  href="javascript:void(0)" onclick="previewMenuOpenClose()"><i id="previewOpenWraper" class="fas fa-bars"></i></span>
-                            <div class="previewMenuWraper">
-                                <span class="previewIcon" href="none"><i class="fas fa-home"></i></span>
-                                <span class="previewIcon" href="none"><i class="fas fa-plus"></i></span>
-                                <span class="previewIcon" href="none"><i class="fas fa-address-book"></i></span>
-                                <span class="previewIcon" href="none"><i class="fas fa-thumbs-up"></i></span>
-                                <span class="previewIcon" href="none"><i class="fas fa-sliders"></i></span>
-                                <span class="previewIcon" href="none"><i class="fas fa-thumbs-down"></i></span>
-                                <span class="previewIcon" href="none"><i class="fas fa-users"></i></span>
-                                <span class="previewIcon" href="none"><i class="fas fa-minus"></i></span>
-                            </div>
-                        </div>
+<div class="faceItem2">
+    <span  class="previewOpenWraper"  href="javascript:void(0)" onclick="previewMenuOpenClose()">
+        <i id="previewOpenWraper" class="fas fa-bars"></i>
+    </span>
+    <div class="previewMenuWraper">
+        <span class="previewIcon" href="none">
+            <i class="fas fa-home"></i>
+        </span>
+        <span class="previewIcon" href="none">
+            <i class="fas fa-plus"></i>
+        </span>
+        <span class="previewIcon" href="none">
+            <i class="fas fa-address-book"></i>
+        </span>
+        <span class="previewIcon" href="none">
+            <i class="fas fa-thumbs-up"></i>
+        </span>
+        <span class="previewIcon" href="none">
+            <i class="fas fa-sliders"></i>
+        </span>
+        <span class="previewIcon" href="none">
+            <i class="fas fa-thumbs-down"></i>
+        </span>
+        <span class="previewIcon" href="none">
+            <i class="fas fa-users"></i>
+        </span>
+        <span class="previewIcon" href="none">
+            <i class="fas fa-minus"></i>
+        </span>
+    </div>
+</div>
                     </textarea>
                     <div class="changeFace">
                         <span href="javascript:void(0)" class="btFace" id="prevFace"onclick="moveCard(1,-1)"><---</span>
@@ -259,71 +270,70 @@
                 <div class="face C item2">
                     <h1>Css Code</h1>
                     <textarea name="" readonly="true" class="textCode">
-                        .faceItem2{
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
+.faceItem2{
+     display: flex;
+    align-items: center;
+    justify-content: center;                   
+}
                         
-                        }
+.previewMenuWraper{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    transition: transform 0.5s;
+    transform: scale(0) rotate(-180deg);                         
+}
                         
-                        .previewMenuWraper{
-                            border-radius: 50%;
-                            width: 300px;
-                            height: 300px;
-                            position: relative;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center; 
-                            transition: transform 0.5s;
-                            transform: scale(0) rotate(-180deg);
-                            
-                        }
+.changeWraper .previewMenuWraper{
+    transform: scale(1) rotate(0);
+}
+
+.previewOpenWraper{
+    z-index: 1;
+}
                         
-                        .changeWraper .previewMenuWraper{
-                            transform: scale(1) rotate(0);
-                        }
-                        .previewOpenWraper{
-                            z-index: 1;
-                        }
+.previewIcon, .previewOpenWraper{
+    border: 1px solid;
+    border-color: red aqua rgb(38, 45, 139) rgb(28, 28, 177);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #111;
+    cursor: pointer;
+}
                         
-                        .previewIcon, .previewOpenWraper{
-                            border: 1px solid;
-                            border-color: red aqua rgb(38, 45, 139) rgb(28, 28, 177);
-                            border-radius: 50%;
-                            width: 60px;
-                            height: 60px;
-                            position: absolute;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            color: #111;
-                            cursor: pointer;
-                        }
-                        
-                        .previewIcon:nth-child(1){
-                            inset: 1px 120px;
-                        }
-                        .previewIcon:nth-child(2){
-                            inset: 47px 213px;
-                        }
-                        .previewIcon:nth-child(3){
-                            inset: 119px 238px;
-                        }
-                        .previewIcon:nth-child(4){
-                            inset: 196px 209px;
-                        }
-                        .previewIcon:nth-child(5){
-                            inset: 237px 119px;
-                        }
-                        .previewIcon:nth-child(6){
-                            inset:196px 31px;
-                        }
-                        .previewIcon:nth-child(7){
-                            inset: 119px 1px;
-                        }
-                        .previewIcon:nth-child(8){
-                            inset:47px 31px;
-                        }
+.previewIcon:nth-child(1){
+    inset: 1px 120px;
+}
+.previewIcon:nth-child(2){
+    inset: 47px 213px;
+}
+.previewIcon:nth-child(3){
+    inset: 119px 238px;
+}
+.previewIcon:nth-child(4){
+    inset: 196px 209px;
+}
+.previewIcon:nth-child(5){
+    inset: 237px 119px;
+}
+.previewIcon:nth-child(6){
+    inset:196px 31px;
+}
+.previewIcon:nth-child(7){
+    inset: 119px 1px;
+}
+.previewIcon:nth-child(8){
+    inset:47px 31px;
+}
                     </textarea>
                     <div class="changeFace">
                         <span href="javascript:void(0)" class="btFace" id="prevFace"onclick="moveCard(1,-1)"><---</span>
@@ -333,12 +343,12 @@
                 <div class="face J item2">
                     <h1>Js Code</h1>
                     <textarea name="" readonly="true" class="textCode">
-                        function previewMenuOpenClose(){
-                            document.querySelector(".faceItem2").classList.toggle("changeWraper");
-                            if(document.getElementById("previewOpenWraper").getAttribute("class") == "fas fa-bars"){
-                                document.getElementById("previewOpenWraper").setAttribute("class", "fas fa-x");
-                            }else document.getElementById("previewOpenWraper").setAttribute("class", "fas fa-bars");
-                        }
+function previewMenuOpenClose(){
+    document.querySelector(".faceItem2").classList.toggle("changeWraper");
+    if(document.getElementById("previewOpenWraper").getAttribute("class") == "fas fa-bars"){
+        document.getElementById("previewOpenWraper").setAttribute("class", "fas fa-x");
+    }else document.getElementById("previewOpenWraper").setAttribute("class", "fas fa-bars");
+}
                     </textarea>
                     <div class="changeFace">
                         <span href="javascript:void(0)" class="btFace" id="prevFace"onclick="moveCard(1,-1)"><---</span>
@@ -421,7 +431,73 @@
                 </div>
                 <div class="face H item3">
                     <h1>Html Code</h1>
-                    <textarea name="" readonly="true" class="textCode"></textarea>
+                    <textarea name="" readonly="true" class="textCode">
+<div class="faceItem2">
+    <div class="clock">
+        <span class="numbers">12</span>
+        <span class="numbers">9</span>
+        <span class="numbers">6</span>
+        <span class="numbers">3</span>
+        <div class="quarts">
+            <svg class="glowEffect">
+                <rect class="glowLine"></rect>
+                <rect class="glowBlur"></rect>
+            </svg>
+        </div>
+        <div class="quarts">
+            <svg class="glowEffect">
+                <rect class="glowLine"></rect>
+                <rect class="glowBlur"></rect>
+            </svg>
+        </div>
+        <div class="quarts">
+            <svg class="glowEffect">
+                <rect class="glowLine"></rect>
+                <rect class="glowBlur"></rect>
+            </svg>
+        </div>
+        <div class="quarts">
+            <svg class="glowEffect">
+                <rect class="glowLine"></rect>
+                <rect class="glowBlur"></rect>
+            </svg>
+        </div>
+        <div class="quarts">
+            <svg class="glowEffect">
+                <rect class="glowLine"></rect>
+                <rect class="glowBlur"></rect>
+            </svg>
+        </div>
+        <div class="quarts">
+            <svg class="glowEffect">
+                <rect class="glowLine"></rect>
+                <rect class="glowBlur"></rect>
+            </svg>
+        </div>
+        <div class="quarts">
+            <svg class="glowEffect">
+                <rect class="glowLine"></rect>
+                <rect class="glowBlur"></rect>
+            </svg>
+        </div>
+        <div class="quarts">
+            <svg class="glowEffect">
+                <rect class="glowLine"></rect>
+                <rect class="glowBlur"></rect>
+            </svg>
+        </div>
+        <div class="timeContainer">
+            <h2 class="time" id="hours"></h2>
+            <div class="lancette">
+                <img src="/webdesign/lancettaMin.svg" alt="" class="lanc lmn">
+                <div class="center"></div>
+                <img src="/webdesign/lancettaHr.svg" alt="" class="lanc lhr">
+            </div>
+            <h2 class="time" id="minutes"></h2>
+        </div>
+    </div>
+</div>
+                    </textarea>
                     <div class="changeFace">
                         <span href="javascript:void(0)" class="btFace" id="prevFace"onclick="moveCard(2,-1)"><---</span>
                         <span href="javascript:void(0)" class="btFace" id="nextFace" onclick="moveCard(2,1)">---></span>
@@ -429,7 +505,166 @@
                 </div>
                 <div class="face C item3">
                     <h1>Css Code</h1>
-                    <textarea name="" readonly="true" class="textCode"></textarea>
+                    <textarea name="" readonly="true" class="textCode">
+.clock{
+    width: 285px;
+    height: 285px;
+    border-radius: 50%;
+    border: 1px solid red;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: conic-gradient(from -.5turn at bottom right, deeppink, cyan, rebeccapurple);
+}
+
+.numbers{
+    position: absolute;
+    font-size: 28px;
+    color: black ;
+}
+
+.numbers:nth-child(1){
+    top: 2px;
+}
+.numbers:nth-child(2){
+    left: 2px;
+
+}
+.numbers:nth-child(3){
+    bottom: 2px;
+}
+.numbers:nth-child(4){
+    right: 2px;
+
+}
+
+.quarts{
+    position: absolute;
+    border: 1px solid black;
+    width: 25px;
+    height: 25px;
+    transform: rotate(45deg);
+}
+
+.quarts:nth-child(5){
+    top: 24px;
+    right: 66px;
+}
+.quarts:nth-child(6){
+    top: 72px;
+    right: 20px;
+}
+.quarts:nth-child(7){
+    bottom: 72px;
+    right: 20px;
+}
+.quarts:nth-child(8){
+    bottom: 23px;
+    right: 69px;
+}
+.quarts:nth-child(9){
+    bottom: 23px;
+    left: 69px;
+}
+.quarts:nth-child(10){
+    bottom: 72px;
+    left: 20px;
+}
+.quarts:nth-child(11){
+    top: 72px;
+    left: 20px;
+}
+.quarts:nth-child(12){
+    top: 24px;
+    left: 66px;
+}
+
+.timeContainer{
+    display: flex;
+}
+
+.lancette{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.center{
+    width: 30px;
+    height: 30px;
+    background: black;
+    border-radius: 50%;
+    border: transparent;
+    z-index: 1;
+}
+
+.time{
+    border: 3px double red;
+    margin-inline: 5px;
+    padding: 5px;
+    z-index: 2;
+    background: conic-gradient(from .5turn at 0% 0%, #00c476, 10%, #82b0ff, 90%, #00c476);
+}
+
+.lanc{
+    position: absolute;
+    transform-origin: bottom center;
+    bottom: 16px;
+}
+
+.lhr{
+    width: 39px;
+    height: 107px
+}
+
+
+/*gloweffect*/
+.glowEffect{
+    --container-offset:100px;
+    --animation-speed: 1000ms;
+    position: absolute;
+    width: calc(100% + var(--container-offset));
+    height: calc(100% + var(--container-offset));
+    inset: calc(var(--container-offset)/ -2);
+    pointer-events: none;
+}
+
+.glowBlur, .glowLine{
+    width: calc(100% - var(--container-offset));
+    height: calc(100% - var(--container-offset));
+    fill: transparent;
+    x: calc(var(--container-offset)/2);
+    y: calc(var(--container-offset)/2);
+    stroke-width: 5px;
+    stroke-dasharray: 25px 20px;
+    transition: stroke-dashoffset var(--animation-speed);
+}
+
+.glowLine{
+    stroke:aliceblue;
+    stroke-width: 2px;
+}
+
+.glowBlur{
+    filter: blur(4px);
+    stroke: dodgerblue;
+}
+
+.clock:is(:hover, :focus) :is(.glowBlur, .glowLine){
+    stroke-dashoffset: -70px;
+    transition: stroke-dashoffset var(--animation-speed);
+}
+
+.clock:is(:hover, :focus) .glowEffect{
+    animation: glow-visibility var(--animation-speed) ease-in;
+}
+
+@keyframes glow-visibility{
+    0%, 100% { opacity: 0; }
+    25%, 75% { opacity: 1;}
+}
+                    </textarea>
                     <div class="changeFace">
                         <span href="javascript:void(0)" class="btFace" id="prevFace"onclick="moveCard(2,-1)"><---</span>
                         <span href="javascript:void(0)" class="btFace" id="nextFace" onclick="moveCard(2,1)">---></span>
@@ -437,7 +672,26 @@
                 </div>
                 <div class="face J item3">
                     <h1>Js Code</h1>
-                    <textarea name="" readonly="true" class="textCode"></textarea>
+                    <textarea name="" readonly="true" class="textCode">
+const timeHours =document.querySelector("#hours");
+const timeMinutes =document.querySelector("#minutes");
+const handMinutes = document.querySelector(".lmn");
+const handHours = document.querySelector(".lhr");
+
+const currentTime = () => {
+    let hh = new Date().getHours(); 
+    let mm = new Date().getMinutes(); 
+    timeHours.innerHTML= hh;
+    timeMinutes.innerHTML= mm;
+    let rotationMinutes = (mm * 6) % 360; 
+    let rotationHours = (hh * 30) % 360;
+    handMinutes.style.transform =`rotateZ( ${rotationMinutes}deg)`; 
+    handHours.style.transform =`rotateZ( ${rotationHours}deg)`;  
+}
+
+currentTime();
+setInterval(currentTime, 1000);
+                    </textarea>
                     <div class="changeFace">
                         <span href="javascript:void(0)" class="btFace" id="prevFace"onclick="moveCard(2,-1)"><---</span>
                         <span href="javascript:void(0)" class="btFace" id="nextFace" onclick="moveCard(2,1)">---></span>

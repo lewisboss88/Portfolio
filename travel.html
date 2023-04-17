@@ -16,8 +16,8 @@
     </head>
 <body>
         <div class="header">
-            <div class="logo"></div>
-            <div class="title" style="margin-top: 30px;">The Simao Hub </div>
+            <div class="logo"><img src="logo_2.jpg" alt=""></div>
+            <div class="title">The Simao Hub </div>
             <a href="javascript:void(0)" id="burger" class="openbtn" onclick="openNav()">&#9776;</a>
             <a href="javascript:void(0)" id="butX" class="closebtn" onclick="closeNav()">&times;</a>
             <div id="side" class="menu">  
@@ -96,7 +96,6 @@
         function openModal(i,j){
         if((j == 0) && (window.innerWidth< 421)){
             document.getElementById("flagMenu").style.transform="scale(1) rotate(0)";
-
         }else{
             switch(i){
                 case 0:
@@ -127,12 +126,14 @@
                     country = sweden;
                 break;
             }
+            closeFlagMenu();
 
             lim = country.length -1;
             document.getElementById("myGallery").style.display="flex";
             document.getElementById("imgContainer").src= country[0].fileName;
             document.getElementById("destination").innerHTML = country[0].coutryName + " - " + country[0].placeName;
         }
+       
         } 
         var country =[];
         var count = 0;
