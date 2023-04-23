@@ -16,7 +16,7 @@ function openNav(){
     else{
         document.getElementById("side").style.width="100%";
         document.getElementById("side").style.right="0rem";
-        document.getElementById("side").style.top="87px";
+        document.getElementById("side").style.top="103px";
         document.getElementById("side").style.overflowX="scroll";
         document.getElementById("burger").style.display="none";
         document.getElementById("butX").style.display="block";
