@@ -25,10 +25,8 @@ h1, h2, h3, h4, h5, p{
 
 .header{
     /*border: 1px solid red; */
-    width: 100%;
-    /*position: fixed;*/
-    top: 0;
-    left: 0;
+    /*width: 100%; */
+    /*position: fixed; */
     padding: 20px;
     display: flex;
     background: #2A2734;
@@ -38,7 +36,6 @@ h1, h2, h3, h4, h5, p{
 }
 footer{
     position: relative;
-    width: 100%;
     margin-top: auto;
     background: #2A2734;
     color: white;
@@ -61,7 +58,6 @@ footer a:hover{
 }
 
 .ft-wrapper{
-    max-width: 100%;
     margin-inline: auto;
     padding-inline: 1rem;
     padding-top: 3rem;
@@ -89,11 +85,15 @@ footer a:hover{
     /*border: 1px solid red;*/ 
     position: relative;
     width: 75%;
-    min-width: 200px;
+    /*min-width: 200px;*/
     font-size: 78px;
     font-family: math;
     letter-spacing: 7px;
     filter: drop-shadow( 8px 6px 4px black)
+}
+
+.title:hover{
+    filter:drop-shadow( 8px 6px 4px #ff995080);
 }
 
 .menu{
@@ -160,10 +160,9 @@ right: 0;
 .container {
     position: relative;
     width: 320px;
-    max-width: 250px;
     margin: 100px auto 0 auto;
     top: 35px;
-    perspective: 1000px;
+    perspective: 1200px;
     display: flex;
 }
 
@@ -217,35 +216,29 @@ right: 0;
 
 .image:nth-child(1) {
     /*background-image: url("me.jpg");*/
-    transform: rotateY( 0deg) translateZ(300px);
+    transform: rotateY( 0deg) translateZ(200px);
 }
 
 .image:nth-child(2) {
     /*background-image: url("webDevelopment.jpg");*/
-    transform: rotateY( 60deg) translateZ(300px);
+    transform: rotateY( 72deg) translateZ(200px);
 }
 
 .image:nth-child(3) {
     /*background-image: url("image_url");*/
-    transform: rotateY( 120deg) translateZ(300px);
+    transform: rotateY( 144deg) translateZ(200px);
 }
 
 .image:nth-child(4) {
     /*background-image: url("barwork.jpg");*/
-    transform: rotateY(180deg) translateZ(300px);
+    transform: rotateY(216deg) translateZ(200px);
 }
 
 .image:nth-child(5) {
     /*background-image: url("travel.jpg");*/
-    transform: rotateY(240deg) translateZ(300px);
+    transform: rotateY(288deg) translateZ(200px);
 }
 
-
-
-.image:nth-child(6) {
-    /*background-image: url("image_url");*/
-    transform: rotateY(300deg) translateZ(300px);
-}
 
 /*-----------------------BAR SECTION---------------------------*/
 .containerBar{
@@ -576,6 +569,7 @@ map area:hover{
     object-fit: fill;
     margin-right: 23px;
     border-radius: 8%;
+    margin-bottom: 1rem;
 }
 
 .content a{

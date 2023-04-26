@@ -26,7 +26,6 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="me.html">About</a></li>
                     <li><a href="webdev.html">Web</a></li>
-                    <li><a href="coding.html">Coding</a></li>
                     <li><a href="barwork.html">Cocktails</a></li>
                     <li><a href="travel.html">Traveling</a></li>
                 </ul>
@@ -48,7 +47,8 @@
                     </ul>
                 </div>
             </div>
-            <div class="sectionContent secondary">
+            <span id="meAnchor" ></span>
+            <div class="sectionContent secondary" id="meCard0">
                 <div class="content">
                     <p>As a recent computing graduate, I am passionate about all things technology and always eager to learn more. My education has provided me with a strong foundation in programming languages, software life cycle development, and database management. Additionally, I have gained practical experience through various personal projects, where I have worked collaboratively with teams to develop solutions that meet clients' needs.</p>
                     <p>I am a critical thinker who enjoys solving complex problems and has a keen attention to detail. I believe that the best results come from an iterative process, where feedback is used to continuously improve upon solutions. As a team player, I am always open to different ideas and perspectives and enjoy contributing to a positive and productive working environment.</p>
@@ -57,24 +57,24 @@
                     <p>Linked below my webpage:</p>
                     <ul>
                         <li>Web development elements with CSS and JavaScript snips.</li>
-                        <li>Personal projects in different languages.</li>
+                        <li style="display: none;">Personal projects in different languages.</li>
                     </ul>
                 </div>
                 <div class="content">
                     <img src="webDevelopment.jpg" alt="">
                     <div class="contentBtn">
                         <a href="webdev.html" class="content-button">Go To My Web-Items <i class="fa-solid fa-globe"></i></a> 
-                        <a href="coding.html" class="content-button">Go To My Projects <i class="fa-solid fa-laptop-code"></i></a> 
+                        <a href="coding.html" style="display: none;" class="content-button">Go To My Projects <i class="fa-solid fa-laptop-code"></i></a> 
                         <span class="content-button" href="javascript:void(0)" onclick="closeSecondary(0)">Close Card <i class="fa-solid fa-minus"></i></span>
                     </div>
                 </div>
             </div>
             <div class="sectionContent secondary">
                 <div class="content">
-                    <img src="me/cocktailmaking.jpg" alt="">
+                    <img src="me/cocktailmaking.jpg" alt="" >
                 </div>
                 <div class="content">
-                    <p>As a bartender with almost a decade of experience, I have worked my way up from a simple bartender to a supervisor, cellar manager, bar manager, consultant freelancer, trainer, and menu designer.</p>
+                    <p id="meAnchor1">As a bartender with almost a decade of experience, I have worked my way up from a simple bartender to a supervisor, cellar manager, bar manager, consultant freelancer, trainer, and menu designer.</p>
                     <br>
                     <ul>
                         <li>Throughout my career, I have developed a range of skills in mixology, customer service, and efficient bar operations. As a supervisor, I have managed teams, trained staff, and ensured quality control. Additionally, my experience as a cellar manager has given me a deep understanding of inventory management, ordering, and storage of beverages.</li> <br>
@@ -92,7 +92,7 @@
                    
                 </div>
             </div>
-            <div class="sectionContent secondary">
+            <div class="sectionContent secondary" id="meAnchor2">
                 <div class="content">
                     <p>As traveller I proud myself with my extensive list of visited places, with a total of 2 Continent, 18 Countries and 155 Cities totalizing a 7.56% of World Travelled under my belt. I made to myself a life commitment to reach 50% of the globe visited in my lifetime.</p>
                     <p>Coupled with traveling, another of my passion is to take pictures to represent the beauty that my eyes perceive through my phone’s lens.</p>
@@ -119,6 +119,7 @@
     
 
     const secondary = document.getElementsByClassName("secondary");
+    const visualPosition = document.get
     function openSecondary(i){
         for(let j =0; j < secondary.length; j++){
             if(j != i){
@@ -127,6 +128,7 @@
 
         }
         secondary[i].style.display="flex";
+        setTimeout(() => {window.location.href= "#meAnchor"}, 200);
         setTimeout(() => {secondary[i].style.transform="scale(1)";}, 500);
         
     }
