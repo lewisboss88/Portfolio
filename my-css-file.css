@@ -256,7 +256,7 @@ right: 0;
     align-items: center;
     width: 100%;
     gap: 1rem;
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
 .sectionBar{
     
@@ -333,6 +333,7 @@ right: 0;
     height: 95%;
     margin: auto;
     overflow: auto;
+    background-color: white;
 }
 .worldmap img{
     object-fit: none;
@@ -693,6 +694,7 @@ map area:hover{
     width: 600px;
     height: 500px;
     margin: 39px 10px 0px 10px;
+    background-color: white;
     
 }
 .cardD p{
@@ -712,9 +714,10 @@ map area:hover{
     max-width: 600px;
     width: 95%;
     height: 500px;
-    border: 1px solid #1cc7d0;
+    border: 4px solid;
     border-radius: inherit;
     position: absolute; 
+    border-color:  #1cc7d0  #1cc7d0 #2ede98 #2ede98  ;
 }
 .textCode{
     border: none;
