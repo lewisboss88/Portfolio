@@ -30,8 +30,8 @@
                 </ul>
             </div>
         </div>
-    <div class="worldmap">
-        <img src="worldmapmask.png" alt="" usemap="#wMap" >
+    <div class="worldmap" id="worldmap">
+        <img src="worldmapmask.png" alt="" usemap="#wMap" id="wMap">
         <map name="wMap">
             <area shape="poly" title="England" coords="545,180,522,213,539,225,563,220,561,197" href="javascript:void(0)" onclick="openModal(0,0)">
             <area shape="poly" title="Spain" coords="533,253,548,255,561,259,554,274,541,276,542,265" href="javascript:void(0)" onclick="openModal(1,0)">
@@ -84,6 +84,13 @@
     <script src="travel/countries.js"></script>
     <script src="menu.js"></script>
     <script>
+        
+        window.onload = (event) =>{if(window.innerWidth < 421){
+                document.getElementById("worldmap").scrollLeft = 400;
+         }}
+         window.onresize = (event) =>{if(window.innerWidth < 421){
+                document.getElementById("worldmap").scrollLeft = 400;
+         }}
         function closeModal(){
             document.getElementById("myGallery").style.display="none";
             document.getElementById("imgContainer").src= "";
