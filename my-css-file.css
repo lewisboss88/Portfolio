@@ -70,7 +70,7 @@ footer a:hover{
     width: 169px;
     height: 140px;
     top: 0;
-    left: 0;
+    left: -5rem;
 }
 
 .logo img{
@@ -100,20 +100,23 @@ footer a:hover{
 
 .menu{
     /*border: 1px solid red; */
-    text-align: right;
+    text-align: left;
     position: fixed;
-    right: 2rem;
+    right: 1rem;
     width:0; 
-    top: 0;
+    top: 132px;
     z-index: 2;
     transition: 0.5s;
     overflow-x: hidden;
-    background-color: #111;
-    padding-top: 30px;
-    backdrop-filter: blur(6px);
-    
-    
+    background: transparent;
+    padding-top: 12px;  
 }
+.menu ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 /*Menu links properties */
 .menu a{
     padding: 8px 8px 8px 10px;
@@ -132,18 +135,18 @@ footer a:hover{
 
 .closebtn{
     position:fixed;
-    top: 25px;
-    right: 5px;
-    font-size: 36px;
-    margin-left: 50px;
+    top: 3rem;
+    right: 3rem;
+    font-size: 79px;
     display: none;
     z-index: 2;
-    
+}
+.closebtn:hover{
+    background-color: #444;
 }
 
 .openbtn{
-font-size: 20px;
-widows: 210px;
+font-size: 54px;
 cursor:pointer;
 border-color: #111;
 color: #f1f1f1;
@@ -152,7 +155,7 @@ border: none;
 display: block;
 position: fixed;
 z-index: 2;
-right: 0;
+right: 2rem;
 }
 
 .openbtn:hover{
@@ -786,21 +789,36 @@ map area:hover{
     .title {
         font-size: 20px;
         padding-right: 57px;
-     
+        left: -1rem;
     }
     .logo{
         width: 90px;
         height: 63px;
+        left: -2rem;
+       
+    }
+
+    footer a{
+        color: aquamarine;
+        text-decoration: underline;
     }
     .menu{
         padding-top: 11px;
+        text-align: right;
+        background-color: #111;
+        backdrop-filter: blur(6px);
     }
     .openbtn{
-        color: dodgerblue;
+        background: linear-gradient(375deg, #1cc7d0, #2ede98);
+        right: 1rem;
+        font-size: 26px;
     }
     
     .closebtn{
-        top: 39px;
+        top: 2rem;
+        right: 2rem;
+        font-size: 40px;
+        background: linear-gradient(375deg, #1cc7d0, #2ede98);
     }
     .sectionContent{
         flex-wrap: wrap;
@@ -857,11 +875,18 @@ map area:hover{
     }
 
 }
-@media screen and (max-width: 815px) {
-    .menu ul{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+@media screen and (max-width: 815px) and (min-width: 415px) {
+    .menu{
+        text-align: right;
+        background-color: #111;
+        backdrop-filter: blur(6px);
+    }
+    .logo{
+        left: -1rem;
+    }
+
+    .title{
+        left: -3rem;
     }
  
     footer a{
@@ -869,4 +894,13 @@ map area:hover{
         text-decoration: underline;
     }
     
+}
+
+@media screen and (max-width: 1015px) and (min-width: 815px){
+    .logo{
+        left: -3rem;
+    }
+    .title{
+        left: -3rem;
+    }
 }

@@ -2,13 +2,13 @@ const year =document.querySelector("#cYear");
 year.innerHTML = new Date().getFullYear();
 function openNav(){
     if (window.innerWidth > 815){ 
-    document.getElementById("side").style.width="100px";
+    document.getElementById("side").style.width="433px";
     document.getElementById("burger").style.display="none";
     document.getElementById("butX").style.display="block";}
     else if (window.innerWidth > 420){
         document.getElementById("side").style.width="100%";
         document.getElementById("side").style.right="0rem";
-        document.getElementById("side").style.top="170px";
+        document.getElementById("side").style.top="197px";
         document.getElementById("side").style.overflowX="scroll";
         document.getElementById("burger").style.display="none";
         document.getElementById("butX").style.display="block";
