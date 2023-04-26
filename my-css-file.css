@@ -158,16 +158,23 @@ right: 0;
 }
 
 .container {
+    --n-faces: 5;
+    --rotation-degree: calc(360deg/ var(--n-faces));
+    --w-image-carousel: 290px;
+    --h-image-carousel: 187px;
+
     position: relative;
     width: 320px;
     margin: 100px auto 0 auto;
     top: 35px;
     perspective: 1200px;
     display: flex;
+    height: 320px;
 }
 
 .carousel {
     position: absolute;
+    text-align: start;
     width: 100%;
     height: 100%;
     transform-style: preserve-3d;
@@ -176,11 +183,18 @@ right: 0;
 .carousel:hover{
     animation-play-state: paused;
 }
+.carousel a{
+    cursor: pointer;
+    position: absolute;
+    transform-style: preserve-3d;
+    text-align: start;
+    
+}
 
 .image {
     position: absolute;
-    width: 290px;
-    height: 187px;
+    width: var(--w-image-carousel);
+    height: var(--h-image-carousel);
     top: 20px;
     left: 10px;
     right: 10px;
@@ -202,41 +216,32 @@ right: 0;
     grid-area: stack;
     align-self: end;
     justify-self: stretch;
-
     background-color: #27273980;
     color: white;
-
     text-align: end;
     padding: 12px;
-
     backdrop-filter: blur(6px);
-
 }
 
 
-.image:nth-child(1) {
-    /*background-image: url("me.jpg");*/
-    transform: rotateY( 0deg) translateZ(200px);
+.carousel a:nth-child(1) .image{
+    transform: rotateY(calc(0*var(--rotation-degree))) translateZ(calc((var(--w-image-carousel)/2)/(tan(var(--rotation-degree)/2))));
 }
 
-.image:nth-child(2) {
-    /*background-image: url("webDevelopment.jpg");*/
-    transform: rotateY( 72deg) translateZ(200px);
+.carousel a:nth-child(2) .image{
+    transform: rotateY(calc(1*var(--rotation-degree))) translateZ(calc((var(--w-image-carousel)/2)/(tan(var(--rotation-degree)/2))));
 }
 
-.image:nth-child(3) {
-    /*background-image: url("image_url");*/
-    transform: rotateY( 144deg) translateZ(200px);
+.carousel a:nth-child(3) .image{
+    transform: rotateY(calc(2*var(--rotation-degree))) translateZ(calc((var(--w-image-carousel)/2)/(tan(var(--rotation-degree)/2))));
 }
 
-.image:nth-child(4) {
-    /*background-image: url("barwork.jpg");*/
-    transform: rotateY(216deg) translateZ(200px);
+.carousel a:nth-child(4) .image{
+    transform: rotateY(calc(3*var(--rotation-degree))) translateZ(calc((var(--w-image-carousel)/2)/(tan(var(--rotation-degree)/2))));
 }
 
-.image:nth-child(5) {
-    /*background-image: url("travel.jpg");*/
-    transform: rotateY(288deg) translateZ(200px);
+.carousel a:nth-child(5) .image{
+    transform: rotateY(calc(4*var(--rotation-degree))) translateZ(calc((var(--w-image-carousel)/2)/(tan(var(--rotation-degree)/2))));
 }
 
 
@@ -681,7 +686,7 @@ map area:hover{
     border-radius: 7%;
     min-width: 340px;
     width: 600px;
-    height: 400px;
+    height: 500px;
     margin: 39px 10px 0px 10px;
     
 }
@@ -690,18 +695,18 @@ map area:hover{
     margin: 1px 1px 1px 1px;
 }
 
-.cardD h1{
+.cardD .title{
     font-size: 28px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #111;
     padding-top: 10px;
-    padding-bottom: 25px;
+    margin-bottom: 3rem;
+    margin-inline: 5rem;
 }
 .face{
     min-width: 340px;
     max-width: 600px;
     width: 95%;
-    height: 400px;
+    height: 500px;
     border: 1px solid #1cc7d0;
     border-radius: inherit;
     position: absolute; 
@@ -810,6 +815,35 @@ map area:hover{
    .galle button:nth-child(3){
     top: 237px;
    }
+
+   .carousel a:nth-child(1) .image{
+    transform: rotateX(calc(0*var(--rotation-degree))) translateZ(calc((var(--h-image-carousel)/2)/(tan(var(--rotation-degree)/2))));
+    }
+
+    .carousel a:nth-child(2) .image{
+    transform: rotateX(calc(1*var(--rotation-degree))) translateZ(calc((var(--h-image-carousel)/2)/(tan(var(--rotation-degree)/2))));
+    }
+
+    .carousel a:nth-child(3) .image{
+    transform: rotateX(calc(2*var(--rotation-degree))) translateZ(calc((var(--h-image-carousel)/2)/(tan(var(--rotation-degree)/2))));
+    }
+
+    .carousel a:nth-child(4) .image{
+    transform: rotateX(calc(3*var(--rotation-degree))) translateZ(calc((var(--h-image-carousel)/2)/(tan(var(--rotation-degree)/2))));
+    }
+
+    .carousel a:nth-child(5) .image{
+    transform: rotateX(calc(4*var(--rotation-degree))) translateZ(calc((var(--h-image-carousel)/2)/(tan(var(--rotation-degree)/2))));
+    }
+    @keyframes rotate360 {
+        from {
+            transform: rotateX(0deg);
+        }
+        to {
+            transform: rotateX(-360deg);
+        }
+    }
+
 }
 @media screen and (max-width: 815px) {
     .menu ul{
