@@ -375,6 +375,66 @@ spain[55]={
     fileName: "travel/spain/spain (56).jpg",
     placeName: "Valencia"
 }
+spain[56]={
+    coutryName : "Spain",
+    fileName: "travel/spain/spain (57).jpg",
+    placeName: "Madrid"
+}
+spain[56]={
+    coutryName : "Spain",
+    fileName: "travel/spain/spain (57).jpg",
+    placeName: "Madrid"
+}
+spain[56]={
+    coutryName : "Spain",
+    fileName: "travel/spain/spain (57).jpg",
+    placeName: "Madrid"
+}
+spain[57]={
+    coutryName : "Spain",
+    fileName: "travel/spain/spain (58).jpg",
+    placeName: "Madrid"
+}
+spain[58]={
+    coutryName : "Spain",
+    fileName: "travel/spain/spain (59).jpg",
+    placeName: "Madrid"
+}
+spain[59]={
+    coutryName : "Spain",
+    fileName: "travel/spain/spain (60).jpg",
+    placeName: "Madrid"
+}
+spain[60]={
+    coutryName : "Spain",
+    fileName: "travel/spain/spain (61).jpg",
+    placeName: "Madrid"
+}
+spain[61]={
+    coutryName : "Spain",
+    fileName: "travel/spain/spain (62).jpg",
+    placeName: "Madrid"
+}
+spain[62]={
+    coutryName : "Spain",
+    fileName: "travel/spain/spain (63).jpg",
+    placeName: "Madrid"
+}
+spain[63]={
+    coutryName : "Spain",
+    fileName: "travel/spain/spain (64).jpg",
+    placeName: "Madrid"
+}
+spain[64]={
+    coutryName : "Spain",
+    fileName: "travel/spain/spain (65).jpg",
+    placeName: "Madrid"
+}
+spain[65]={
+    coutryName : "Spain",
+    fileName: "travel/spain/spain (66).jpg",
+    placeName: "Madrid"
+}
 
 
 /*----------------------Portugal-------------------*/
@@ -741,6 +801,31 @@ austria[13]={
     fileName:"travel/austria/austria (14).jpg",
     placeName:"Vienna"
 }
+austria[14]={
+    coutryName:"Austria",
+    fileName:"travel/austria/austria (15).jpg",
+    placeName:"Vienna"
+}
+austria[15]={
+    coutryName:"Austria",
+    fileName:"travel/austria/austria (16).jpg",
+    placeName:"Vienna"
+}
+austria[16]={
+    coutryName:"Austria",
+    fileName:"travel/austria/austria (17).jpg",
+    placeName:"Vienna"
+}
+austria[17]={
+    coutryName:"Austria",
+    fileName:"travel/austria/austria (18).jpg",
+    placeName:"Vienna"
+}
+austria[18]={
+    coutryName:"Austria",
+    fileName:"travel/austria/austria (19).jpg",
+    placeName:"Vienna"
+}
 /*----------------------Denmark-------------------*/
 const denmark =[];
 denmark[0]={
@@ -955,4 +1040,37 @@ sweden[14]={
     coutryName:"Sweden",
     fileName:"travel/sweden/sweden (15).jpg",
     placeName:"Malmo"
+}
+
+/*---------------------Poland-------------------*/
+const poland =[];
+poland[0]={
+    coutryName:"Poland",
+    fileName:"travel/poland/poland (1).jpg",
+    placeName:"Krakov"
+}
+poland[1]={
+    coutryName:"Poland",
+    fileName:"travel/poland/poland (2).jpg",
+    placeName:"Krakov"
+}
+poland[2]={
+    coutryName:"Poland",
+    fileName:"travel/poland/poland (3).jpg",
+    placeName:"Krakov"
+}
+poland[3]={
+    coutryName:"Poland",
+    fileName:"travel/poland/poland (4).jpg",
+    placeName:"Krakov"
+}
+poland[4]={
+    coutryName:"Poland",
+    fileName:"travel/poland/poland (5).jpg",
+    placeName:"Krakov"
+}
+poland[5]={
+    coutryName:"Poland",
+    fileName:"travel/poland/poland (6).jpg",
+    placeName:"Krakov"
 }

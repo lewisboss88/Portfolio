@@ -356,7 +356,7 @@ map area:hover{
     align-items: center;
     transition: transform 0.5s;
     top: 30%;
-    left: 6px;
+    left: 24px;
     transform: scale(0) rotate(-180deg);
     backdrop-filter: blur(2px);
 
@@ -379,36 +379,40 @@ map area:hover{
 }
 
 .circle:nth-child(2){
-    top:0;
-    left: 39%;
+    top: 1px;
+    left: 38%;
 }
 .circle:nth-child(3){
-    top:13%;
-    right: 10%;
+    top: 9%;
+    right: 14%;
 }
 .circle:nth-child(4){
-    top:39%;
-    right: 0;
+    top: 30%;
+    right: 1px;
 }
 .circle:nth-child(5){
-    bottom:10%;
-    right: 13%;
+    bottom: 21%;
+    right: 3%;
 }
 .circle:nth-child(6){
-    bottom:0;
-    right: 39%;
+    bottom: 7px;
+    right: 50%;
 }
 .circle:nth-child(7){
-    bottom:13%;
-    left: 10%;
+    bottom: 19%;
+    left: 6%;
 }
 .circle:nth-child(8){
-    top:39%;
-    left: 0;
+    top: 32%;
+    left: 4px;
 }
 .circle:nth-child(9){
-    top: 10%;
-    left: 13%;
+    top: 9%;
+    left: 14%;
+}
+.circle:nth-child(10){
+    top: 72%;
+    left: 54%;
 }
 
 
@@ -573,7 +577,7 @@ map area:hover{
 }
 .content ul li{
     color: #111;
-    text-align: justify;
+    text-align: left;
 }
 
 .content img{

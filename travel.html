@@ -42,7 +42,7 @@
             <area shape="poly" title="Austria" coords="594,234,600,233,607,229,608,235,603,238" href="javascript:void(0)" onclick="openModal(6,0)">
             <area shape="poly" title="Denmark" coords="580,200,596,201,591,187,583,187" href="javascript:void(0)" onclick="openModal(7,0)">
             <area shape="poly" title="Sweden" coords="592,182,597,196,605,193,608,182,614,176,608,169,605,161,611,156,617,149,622,143,619,134,613,129,607,136,604,142,603,149,597,155,597,161,599,168,597,174" href="javascript:void(0)" onclick="openModal(8,0)">
-
+            <area shape="poly" title="Poland" coords="606,205,613,201,626,204,628,212,630,218,623,221,615,219,608,215" href="javascript:void(0)" onclick="openModal(9,0)">
         </map>
         </map>
     </div>
@@ -73,6 +73,7 @@
         <div class="circle" href="javascript:void(0)" onclick="openModal(5,1)"><img src="travel/flags/Flag_of_Morocco.svg.png" alt=""></div>
         <div class="circle" href="javascript:void(0)" onclick="openModal(2,1)"><img src="travel/flags/Flag_of_Portugal.svg.png" alt=""></div>
         <div class="circle" href="javascript:void(0)" onclick="openModal(1,1)"><img src="travel/flags/Spain_flag_300.png" alt=""></div>
+        <div class="circle" href="javascript:void(0)" onclick="openModal(9,1)"><img src="/travel/flags/Flag_of_Poland.svg.png" alt=""></div>
     </div>
     <footer>
         <div class="ft-wrapper">
@@ -130,6 +131,9 @@
                 break;
                 case 8:
                     country = sweden;
+                break;
+                case 9:
+                    country = poland;
                 break;
             }
             closeFlagMenu();
