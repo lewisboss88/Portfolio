@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background: white;
+    background: #2A2734;
     text-align: center;
     font-family: 'Inter', sans-serif;
     color: #fefefe;
@@ -29,21 +29,23 @@ h1, h2, h3, h4, h5, p{
     /*position: fixed; */
     padding: 20px;
     display: flex;
-    background: #2A2734;
+    background: transparent;
     justify-content: center;
     align-items: center;
+    backdrop-filter: brightness(0.5);
 
 }
 footer{
     position: relative;
     margin-top: auto;
-    background: #2A2734;
+    background: transparent;
     color: white;
     --mask:
     radial-gradient(30.34px at 50% 42.90px,#000 99%,#0000 101%) calc(50% - 44px) 0/88px 100%,
     radial-gradient(30.34px at 50% -20.9px,#0000 99%,#000 101%) 50% 22px/88px 100% repeat-x;
      -webkit-mask: var(--mask);
-          mask: var(--mask);
+    mask: var(--mask);
+    backdrop-filter: brightness(0.5);
 
 }
 footer p{
@@ -534,6 +536,8 @@ map area:hover{
     align-items: center;
     margin-top: 2rem;
     /*border: 1px solid red;*/
+    background-color: white;
+    border-radius: 2%;
 }
 
 .content{
