@@ -65,6 +65,31 @@ england[012]={
     fileName : "travel/england/england (13).jpg",
     placeName : "Birmingham"
 }
+england[013]={
+    coutryName :"England",
+    fileName : "travel/england/england (14).jpg",
+    placeName : "London"
+}
+england[014]={
+    coutryName :"England",
+    fileName : "travel/england/england (15).jpg",
+    placeName : "London"
+}
+england[015]={
+    coutryName :"England",
+    fileName : "travel/england/england (16).jpg",
+    placeName : "London"
+}
+england[016]={
+    coutryName :"England",
+    fileName : "travel/england/england (17).jpg",
+    placeName : "Birmingham"
+}
+england[017]={
+    coutryName :"England",
+    fileName : "travel/england/england (18).jpg",
+    placeName : "London"
+}
 
 
 /*----------------------SPAIN-------------------*/
