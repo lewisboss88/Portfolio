@@ -809,7 +809,6 @@ map area:hover{
         backdrop-filter: blur(6px);
     }
     .openbtn{
-        background: linear-gradient(375deg, #1cc7d0, #2ede98);
         right: 1rem;
         font-size: 26px;
     }
@@ -818,7 +817,6 @@ map area:hover{
         top: 2rem;
         right: 2rem;
         font-size: 40px;
-        background: linear-gradient(375deg, #1cc7d0, #2ede98);
     }
     .sectionContent{
         flex-wrap: wrap;
