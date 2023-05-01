@@ -786,7 +786,7 @@ map area:hover{
 }
 /*-----------------------------RESPONSIVE------------------------------------*/
 @media screen and (max-width: 480px) {
-    .title {
+    .header .title {
         font-size: 20px;
         padding-right: 57px;
         left: -1rem;
@@ -883,7 +883,7 @@ map area:hover{
         left: -1rem;
     }
 
-    .title{
+    .header .title{
         left: -3rem;
     }
  
@@ -898,7 +898,7 @@ map area:hover{
     .logo{
         left: -3rem;
     }
-    .title{
+    .header .title{
         left: -3rem;
     }
 }
