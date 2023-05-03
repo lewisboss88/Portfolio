@@ -33,16 +33,16 @@
     <div class="worldmap" id="worldmap">
         <img src="worldmapmask.png" alt="" usemap="#wMap" id="wMap">
         <map name="wMap">
-            <area shape="poly" title="England" coords="545,180,522,213,539,225,563,220,561,197" href="javascript:void(0)" onclick="openModal(0,0)">
-            <area shape="poly" title="Spain" coords="533,253,548,255,561,259,554,274,541,276,542,265" href="javascript:void(0)" onclick="openModal(1,0)">
-            <area shape="poly" title="Portugal" coords="532,262,536,264,534,278,528,278" href="javascript:void(0)" onclick="openModal(2,0)">
-            <area shape="poly" title="Italy" coords="584,245,593,238,598,242,615,265,610,281,599,276,594,268,586,264" href="javascript:void(0)" onclick="openModal(3,0)">
-            <area shape="poly" title="Switzerland" coords="580,237,585,233,588,238" href="javascript:void(0)" onclick="openModal(4,0)">
-            <area shape="poly" title="Morocco" coords="551,288,537,285,529,296,525,307,512,315,500,337,511,337,517,331,517,323,528,321,532,311,542,306,547,298,553,299" href="javascript:void(0)" onclick="openModal(5,0)">
-            <area shape="poly" title="Austria" coords="594,234,600,233,607,229,608,235,603,238" href="javascript:void(0)" onclick="openModal(6,0)">
-            <area shape="poly" title="Denmark" coords="580,200,596,201,591,187,583,187" href="javascript:void(0)" onclick="openModal(7,0)">
-            <area shape="poly" title="Sweden" coords="592,182,597,196,605,193,608,182,614,176,608,169,605,161,611,156,617,149,622,143,619,134,613,129,607,136,604,142,603,149,597,155,597,161,599,168,597,174" href="javascript:void(0)" onclick="openModal(8,0)">
-            <area shape="poly" title="Poland" coords="606,205,613,201,626,204,628,212,630,218,623,221,615,219,608,215" href="javascript:void(0)" onclick="openModal(9,0)">
+            <area shape="poly" title="England" coords="545,180,522,213,539,225,563,220,561,197" href="javascript:void(0)" onclick="openModal(england,0)">
+            <area shape="poly" title="Spain" coords="533,253,548,255,561,259,554,274,541,276,542,265" href="javascript:void(0)" onclick="openModal(spain,0)">
+            <area shape="poly" title="Portugal" coords="532,262,536,264,534,278,528,278" href="javascript:void(0)" onclick="openModal(portugal,0)">
+            <area shape="poly" title="Italy" coords="584,245,593,238,598,242,615,265,610,281,599,276,594,268,586,264" href="javascript:void(0)" onclick="openModal(italy,0)">
+            <area shape="poly" title="Switzerland" coords="580,237,585,233,588,238" href="javascript:void(0)" onclick="openModal(switzerland,0)">
+            <area shape="poly" title="Morocco" coords="551,288,537,285,529,296,525,307,512,315,500,337,511,337,517,331,517,323,528,321,532,311,542,306,547,298,553,299" href="javascript:void(0)" onclick="openModal(morocco,0)">
+            <area shape="poly" title="Austria" coords="594,234,600,233,607,229,608,235,603,238" href="javascript:void(0)" onclick="openModal(austria,0)">
+            <area shape="poly" title="Denmark" coords="580,200,596,201,591,187,583,187" href="javascript:void(0)" onclick="openModal(denmark,0)">
+            <area shape="poly" title="Sweden" coords="592,182,597,196,605,193,608,182,614,176,608,169,605,161,611,156,617,149,622,143,619,134,613,129,607,136,604,142,603,149,597,155,597,161,599,168,597,174" href="javascript:void(0)" onclick="openModal(sweden,0)">
+            <area shape="poly" title="Poland" coords="606,205,613,201,626,204,628,212,630,218,623,221,615,219,608,215" href="javascript:void(0)" onclick="openModal(poland,0)">
         </map>
         </map>
     </div>
@@ -65,16 +65,19 @@
     </div>
     <div class="flagMenu" id="flagMenu">
         <div class="circle"><span href="javascript:void(0)" onclick="closeFlagMenu()" class="close">&times;</span></div>
-        <div class="circle" href="javascript:void(0)" onclick="openModal(3,1)" ><img src="travel/flags/Flag_of_Italy.svg.webp" alt=""></div>
-        <div class="circle" href="javascript:void(0)" onclick="openModal(0,1)"><img src="travel/flags/1280px-Flag_of_the_United_Kingdom_(2-3).svg.png" alt=""></div>
-        <div class="circle" href="javascript:void(0)" onclick="openModal(7,1)"><img src="travel/flags/Flag_of_Denmark.svg.png" alt=""></div>
-        <div class="circle" href="javascript:void(0)" onclick="openModal(8,1)" ><img src="travel/flags/Flag_of_Sweden.svg.png" alt=""></div>
-        <div class="circle" href="javascript:void(0)" onclick="openModal(6,1)"><img src="travel/flags/Flag_of_Austria.png" alt=""></div>
-        <div class="circle" href="javascript:void(0)" onclick="openModal(5,1)"><img src="travel/flags/Flag_of_Morocco.svg.png" alt=""></div>
-        <div class="circle" href="javascript:void(0)" onclick="openModal(2,1)"><img src="travel/flags/Flag_of_Portugal.svg.png" alt=""></div>
-        <div class="circle" href="javascript:void(0)" onclick="openModal(1,1)"><img src="travel/flags/Spain_flag_300.png" alt=""></div>
-        <div class="circle" href="javascript:void(0)" onclick="openModal(9,1)"><img src="/travel/flags/Flag_of_Poland.svg.png" alt=""></div>
+        <div class="circle" href="javascript:void(0)" onclick="openModal(italy,1)" ><img src="travel/flags/Flag_of_Italy.svg.webp" alt=""></div>
+        <div class="circle" href="javascript:void(0)" onclick="openModal(england,1)"><img src="travel/flags/1280px-Flag_of_the_United_Kingdom_(2-3).svg.png" alt=""></div>
+        <div class="circle" href="javascript:void(0)" onclick="openModal(denmark,1)"><img src="travel/flags/Flag_of_Denmark.svg.png" alt=""></div>
+        <div class="circle" href="javascript:void(0)" onclick="openModal(sweden,1)" ><img src="travel/flags/Flag_of_Sweden.svg.png" alt=""></div>
+        <div class="circle" href="javascript:void(0)" onclick="openModal(austria,1)"><img src="travel/flags/Flag_of_Austria.png" alt=""></div>
+        <div class="circle" href="javascript:void(0)" onclick="openModal(morocco,1)"><img src="travel/flags/Flag_of_Morocco.svg.png" alt=""></div>
+        <div class="circle" href="javascript:void(0)" onclick="openModal(portugal,1)"><img src="travel/flags/Flag_of_Portugal.svg.png" alt=""></div>
+        <div class="circle" href="javascript:void(0)" onclick="openModal(spain,1)"><img src="travel/flags/Spain_flag_300.png" alt=""></div>
+        <div class="circle" href="javascript:void(0)" onclick="openModal(poland,1)"><img src="/travel/flags/Flag_of_Poland.svg.png" alt=""></div>
+        <div class="circle" href="javascript:void(0)" onclick="openModal(switzerland,1)"><img src="/travel/flags/Flag_of_Switzerland.svg.png" alt=""></div>
     </div>
+    <div class="instruction"><p>Welcome to my Travel page!!</p>Here you can find my Travel map with all my past destination (Light Blue highlighted). Click on any visited country to open the gallery with my best picture of each place.
+    <p>Enjoy your visit</p></div>
     <footer>
         <div class="ft-wrapper">
             <p style="text-align: left;">Created by: Simao De Jesus</p>
@@ -88,7 +91,8 @@
         
         window.onload = (event) =>{if(window.innerWidth < 421){
                 document.getElementById("worldmap").scrollLeft = 400;
-         }}
+               }
+         }
          window.onresize = (event) =>{if(window.innerWidth < 421){
                 document.getElementById("worldmap").scrollLeft = 400;
          }}
@@ -104,40 +108,8 @@
         if((j == 0) && (window.innerWidth< 421)){
             document.getElementById("flagMenu").style.transform="scale(1) rotate(0)";
         }else{
-            switch(i){
-                case 0:
-                    country = england;
-                break;
-                case 1:
-                    country = spain;
-                break;
-                case 2:
-                    country = portugal;
-                break;
-                case 3:
-                    country = italy;
-                break;
-                case 4:
-                    country = switzerland;
-                break;
-                case 5:
-                    country = morocco;
-                break;
-                case 6:
-                    country = austria;
-                break;
-                case 7:
-                    country = denmark;
-                break;
-                case 8:
-                    country = sweden;
-                break;
-                case 9:
-                    country = poland;
-                break;
-            }
+            country = i;
             closeFlagMenu();
-
             lim = country.length -1;
             document.getElementById("myGallery").style.display="flex";
             document.getElementById("imgContainer").src= country[0].fileName;
@@ -145,7 +117,7 @@
         }
        
         } 
-        var country =[];
+        var country =[]; 
         var count = 0;
         var lim ;
         function jvprev(n){
@@ -159,6 +131,8 @@
             document.getElementById("destination").innerHTML = country[count].coutryName + " - " + country[count].placeName;
 
         }
+
+       
 
 
         

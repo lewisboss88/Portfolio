@@ -248,6 +248,34 @@ right: 2rem;
 .carousel a:nth-child(5) .image{
     transform: rotateY(calc(4*var(--rotation-degree))) translateZ(calc((var(--w-image-carousel)/2)/(tan(var(--rotation-degree)/2))));
 }
+/*-----------------------POPUP ISTRUCTION ---------------------------*/
+
+.instruction{
+    width: 343px;
+    height: auto;
+    min-height: 264px;
+    display: block;
+    background:  #b1aaaaca;
+    backdrop-filter: blur(2px);
+    color:  black;
+    position: absolute;
+    inset: 200px 0px auto 21px;
+    transform: scale(0);
+    transition: scale 1s ease-in-out;
+    z-index: 3;
+    border: 1px solid;
+    border-color: #1cc7d0 #2ede98;
+    text-align: left;
+    font-size: 20px;
+    padding: 1rem;
+}
+.instruction p:nth-child(1){
+    text-align: center;
+}
+.instruction p:nth-child(2){
+    padding-block: 1rem;
+    text-align: right;
+}
 
 
 /*-----------------------BAR SECTION---------------------------*/
@@ -382,42 +410,45 @@ map area:hover{
 }
 
 .circle:nth-child(2){
-    top: 1px;
-    left: 38%;
+    top: -5%;
+    left: 25%;
 }
 .circle:nth-child(3){
-    top: 9%;
-    right: 14%;
+    top: 10%;
+    right: 6%;
 }
 .circle:nth-child(4){
-    top: 30%;
-    right: 1px;
+    top: 33%;
+    right: -5%;
 }
 .circle:nth-child(5){
-    bottom: 21%;
-    right: 3%;
+    bottom: 19%;
+    right: 4%;
 }
 .circle:nth-child(6){
-    bottom: 7px;
+    bottom: 6%;
     right: 50%;
 }
 .circle:nth-child(7){
-    bottom: 19%;
+    bottom: 20%;
     left: 6%;
 }
 .circle:nth-child(8){
-    top: 32%;
-    left: 4px;
+    top: 34%;
+    left: -3%;
 }
 .circle:nth-child(9){
-    top: 9%;
-    left: 14%;
+    top: 12%;
+    left: 8%;
 }
 .circle:nth-child(10){
-    top: 72%;
-    left: 54%;
+    top: 70%;
+    left: 52%;
 }
-
+.circle:nth-child(11){
+    top: -7%;
+    left: 50%;
+}
 
 
 /*---------------------SIDES---------------------------------------*/
@@ -714,7 +745,7 @@ map area:hover{
     color: #111;
     padding-top: 10px;
     margin-bottom: 3rem;
-    margin-inline: 5rem;
+    margin-inline: auto;
 }
 .face{
     min-width: 340px;

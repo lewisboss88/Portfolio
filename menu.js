@@ -30,3 +30,12 @@ function closeNav(){
     document.getElementById("burger").style.display="block";
     document.getElementById("butX").style.display="none";
 }
+
+const openIstruction = () =>{
+    if(window.innerWidth < 421){ setTimeout(() => {document.querySelector(".instruction").style.transform="scale(1)";}, 500); } 
+   
+}
+
+window.onload = openIstruction();
+window.onresize = openIstruction();
+window.onclick = () =>{document.querySelector(".instruction").style.transform="scale(0)" }
