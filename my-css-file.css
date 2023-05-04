@@ -622,6 +622,7 @@ map area:hover{
     margin-right: 23px;
     border-radius: 8%;
     margin-bottom: 1rem;
+    max-height: 200px;
 }
 
 .content a{
