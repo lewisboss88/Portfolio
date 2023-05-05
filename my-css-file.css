@@ -487,12 +487,9 @@ map area:hover{
 .modal{
     display: none;
     position: absolute;
-    top: 0;
     z-index: 50;
-    left: 0;
-    top: 0;
     width: 100%;
-    height: 100%;
+    height: 128%;
     overflow: auto;
     align-items: center;
     background-color: #111;
@@ -622,7 +619,6 @@ map area:hover{
     margin-right: 23px;
     border-radius: 8%;
     margin-bottom: 1rem;
-    max-height: 200px;
 }
 
 .content a{
@@ -830,7 +826,6 @@ map area:hover{
         width: 90px;
         height: 63px;
         left: -2rem;
-       
     }
 
     footer a{
@@ -855,10 +850,15 @@ map area:hover{
     }
     .sectionContent{
         flex-wrap: wrap;
-       
     }
     .content{
         width: 100%;
+    }
+    .content img{
+        max-height: 200px;
+    }
+    .modal{
+        height: 100%;
     }
     .galle{
         flex-direction: column;

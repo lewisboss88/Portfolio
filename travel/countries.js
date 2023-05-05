@@ -633,82 +633,82 @@ const italy =[];
 italy[0]={
     coutryName : "italy",
     fileName: "travel/italy/italy (1).jpg",
-    placeName: ""
+    placeName: "Milano"
 }
 italy[1]={
     coutryName : "italy",
     fileName: "travel/italy/italy (2).jpg",
-    placeName: ""
+    placeName: "Milano"
 }
 italy[2]={
     coutryName : "italy",
     fileName: "travel/italy/italy (3).jpg",
-    placeName: ""
+    placeName: "Milano"
 }
 italy[3]={
     coutryName : "italy",
     fileName: "travel/italy/italy (4).jpg",
-    placeName: ""
+    placeName: "Lecco"
 }
 italy[4]={
     coutryName : "italy",
     fileName: "travel/italy/italy (5).jpg",
-    placeName: ""
+    placeName: "Lecco"
 }
 italy[5]={
     coutryName : "italy",
     fileName: "travel/italy/italy (6).jpg",
-    placeName: ""
+    placeName: "Lecco"
 }
 italy[6]={
     coutryName : "italy",
     fileName: "travel/italy/italy (7).jpg",
-    placeName: ""
+    placeName: "Falconara Marittima"
 }
 italy[7]={
     coutryName : "italy",
     fileName: "travel/italy/italy (8).jpg",
-    placeName: ""
+    placeName: "Ancona"
 }
 italy[8]={
     coutryName : "italy",
     fileName: "travel/italy/italy (9).jpg",
-    placeName: ""
+    placeName: "Falconara Marittima"
 }
 italy[9]={
     coutryName : "italy",
     fileName: "travel/italy/italy (10).jpg",
-    placeName: ""
+    placeName: "Falconara Marittima"
 }
 italy[10]={
     coutryName : "italy",
     fileName: "travel/italy/italy (11).jpg",
-    placeName: ""
+    placeName: "Conero"
 }
 italy[11]={
     coutryName : "italy",
     fileName: "travel/italy/italy (12).jpg",
-    placeName: ""
+    placeName: "Conero"
 }
 italy[12]={
     coutryName : "italy",
     fileName: "travel/italy/italy (13).jpg",
-    placeName: ""
+    placeName: "Conero"
 }
 italy[13]={
     coutryName : "italy",
     fileName: "travel/italy/italy (14).jpg",
-    placeName: ""
+    placeName: "Conero"
 }
 italy[14]={
     coutryName : "italy",
     fileName: "travel/italy/italy (15).jpg",
-    placeName: ""
+    placeName: "Numana"
 }
 italy[15]={
     coutryName : "italy",
     fileName: "travel/italy/italy (16).jpg",
-    placeName: ""
+    placeName: "Numana"
 }
 
 /*----------------------switzerland -------------------*/
