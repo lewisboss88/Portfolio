@@ -1,6 +1,21 @@
+html{
+    --site-color-1: rgb(127, 229, 255);
+    --site-color-2: #2ede98;
+    --background-image: url(/screen.jpg) no-repeat;
+    --background-color: #2A2734;
+    --borders-color-1: var(--site-color-1);
+    --hover-color-1: var(--site-color-1); 
+    --hover-color-2: #f1f1f1;
+    /*------ Carousel property variables -----*/
+    --n-faces: 5;
+    --rotation-degree: calc(360deg/ var(--n-faces));
+    --w-image-carousel: 290px;
+    --h-image-carousel: 187px;
+}
 body {
     margin: 0;
-    background: #2A2734;
+    background: var(--background-image);
+    background-size: cover;
     text-align: center;
     font-family: 'Inter', sans-serif;
     color: #fefefe;
@@ -25,9 +40,6 @@ h1, h2, h3, h4, h5, p{
 
 
 .header{
-    /*border: 1px solid red; */
-    /*width: 100%; */
-    /*position: fixed; */
     padding: 20px;
     display: flex;
     background: transparent;
@@ -56,7 +68,7 @@ footer p{
 }
 
 footer a:hover{
-    color: aquamarine;
+    color: var(--hover-color-1);
     text-decoration: underline;
 }
 
@@ -81,14 +93,12 @@ footer a:hover{
 }
 
 .logo img:hover{
-    filter:drop-shadow( 8px 6px 4px #ff995080);
+    filter:drop-shadow( 8px 6px 4px var(--hover-color-1));
 }
 
 .title{
-    /*border: 1px solid red;*/ 
     position: relative;
     width: 75%;
-    /*min-width: 200px;*/
     font-size: 78px;
     font-family: math;
     letter-spacing: 7px;
@@ -96,11 +106,10 @@ footer a:hover{
 }
 
 .title:hover{
-    filter:drop-shadow( 8px 6px 4px #ff995080);
+    filter:drop-shadow( 8px 6px 4px var(--hover-color-1));
 }
 
 .menu{
-    /*border: 1px solid red; */
     text-align: left;
     position: fixed;
     right: 1rem;
@@ -131,7 +140,7 @@ footer a:hover{
 
 
 .menu a:hover{
-    color: #f1f1f1;
+    color: var(--hover-color-1);
 }
 
 .closebtn{
@@ -143,7 +152,7 @@ footer a:hover{
     z-index: 2;
 }
 .closebtn:hover{
-    background-color: #444;
+    color: var(--hover-color-1);
 }
 
 .openbtn{
@@ -160,15 +169,10 @@ right: 2rem;
 }
 
 .openbtn:hover{
-    background-color: #444;
+    color: var(--hover-color-1);
 }
 
 .container {
-    --n-faces: 5;
-    --rotation-degree: calc(360deg/ var(--n-faces));
-    --w-image-carousel: 290px;
-    --h-image-carousel: 187px;
-
     position: relative;
     width: 320px;
     margin: 100px auto 0 auto;
@@ -217,7 +221,9 @@ right: 2rem;
     place-self: stretch;
 }
 
-
+.image:hover > figcaption{
+    color: var(--hover-color-1);
+}
 .image > figcaption{
     grid-area: stack;
     align-self: end;
@@ -265,7 +271,7 @@ right: 2rem;
     transition: scale 1s ease-in-out;
     z-index: 3;
     border: 1px solid;
-    border-color: #1cc7d0 #2ede98;
+    border-color: var(--site-color-1) var(--site-color-2);
     text-align: left;
     font-size: 20px;
     padding: 1rem;
@@ -306,7 +312,7 @@ right: 2rem;
     height: 100%;
     width: 100%;
     padding: 5px;
-    background: linear-gradient(375deg, #1cc7d0, #2ede98);
+    background: linear-gradient(375deg, var(--site-color-1), #2ede98);
     border-radius: 10px;
     transform: translateY(0deg);
     transform-style: preserve-3d;
@@ -345,7 +351,7 @@ right: 2rem;
     width: 150px;
     padding: 5px;
     border-radius: 50%;
-    background: linear-gradient(375deg, #1cc7d0, #2ede98);
+    background: linear-gradient(375deg, var(--site-color-1), #2ede98);
   }
  .back-face .title{
     color: #111;
@@ -454,7 +460,7 @@ map area:hover{
 }
 
 
-/*---------------------SIDES---------------------------------------*/
+/*---------------------Animations---------------------------------------*/
 @keyframes rotate360 {
     from {
         transform: rotateY(0deg);
@@ -565,16 +571,15 @@ map area:hover{
 /*-----------------------------ME-SECTION------------------------------------*/
 .containerContent{
     display: block;
-   /* border: 1px solid blue;*/
    padding: 1rem;
     margin-block: 2rem;
+    scroll-behavior: smooth;
 }
 
 .sectionContent{
     display: flex;
     align-items: center;
     margin-top: 2rem;
-    /*border: 1px solid red;*/
     background-color: white;
     border-radius: 2%;
 }
@@ -582,7 +587,6 @@ map area:hover{
 .content{
     display: flex;
     width: 50%;
-    /*border: 1px solid black;*/
     margin: 13px;
     height: auto;
     flex-direction: column;
@@ -593,8 +597,7 @@ map area:hover{
     color: blue;
 }
 .secondary{
-    background: linear-gradient(375deg, #1cc7d0, #2ede98);
-    border: 1px double dodgerblue;
+    background: linear-gradient(375deg, var(--site-color-1), var(--site-color-2));
     border-radius: 3%;
     transform: scale(0) matrix(0,1,1,0,0,0);
     transition: transform 1200ms;
@@ -634,13 +637,15 @@ map area:hover{
     justify-content: space-between;
 }
 .content-button{
-    color: dodgerblue;
+    color: blue;
     padding-right: 32px;
     padding-left: 32px;
     cursor: pointer;
 }
 
+#meAnchor{
 
+}
 /*-------------------------------CONTACT------------------------------------*/
 
 .containerContact{
@@ -649,13 +654,14 @@ map area:hover{
     width: 100%;
     height: 350px;
     margin: auto;
-    background: linear-gradient(375deg, #1cc7d0, #2ede98);
+    background: linear-gradient(375deg, var(--site-color-1), var(--site-color-2));
     border-radius: 8%;
     display: flex;
     flex-direction: column;
     overflow: hidden;
     position: relative;
     top: 60px;
+    
 
 }
 .containerContact::after{
@@ -755,7 +761,7 @@ map area:hover{
     border: 4px solid;
     border-radius: inherit;
     position: absolute; 
-    border-color:  #1cc7d0  #1cc7d0 #2ede98 #2ede98  ;
+    border-color:  var(--site-color-1) var(--site-color-1) var(--site-color-2) var(--site-color-2) ;
 }
 .textCode{
     border: none;
@@ -784,7 +790,7 @@ map area:hover{
 }
 
 .btFace:hover{
-   color:#1cc7d0;
+   color:var(--site-color-1);
     cursor: pointer;
 }
 
@@ -923,7 +929,7 @@ map area:hover{
     }
  
     footer a{
-        color: aquamarine;
+        color: var(--hover-color-1);
         text-decoration: underline;
     }
     
