@@ -11,6 +11,10 @@ html{
     --rotation-degree: calc(360deg/ var(--n-faces));
     --w-image-carousel: 290px;
     --h-image-carousel: 187px;
+
+    --text-color-1: black;
+    --text-color-2: white;
+    --text-color-alternate: blue;
 }
 body {
     margin: 0;
@@ -27,7 +31,7 @@ body {
 }
 a{
     text-decoration: none;
-    color: white;
+    color: var(--text-color-2);
 }
 h1, h2, h3, h4, h5, p{
     color: black;
@@ -52,7 +56,7 @@ footer{
     position: relative;
     margin-top: auto;
     background: transparent;
-    color: white;
+    color: var(--text-color-2);
     --mask:
     radial-gradient(30.34px at 50% 42.90px,#000 99%,#0000 101%) calc(50% - 44px) 0/88px 100%,
     radial-gradient(30.34px at 50% -20.9px,#0000 99%,#000 101%) 50% 22px/88px 100% repeat-x;
@@ -62,7 +66,7 @@ footer{
 
 }
 footer p{
-    color: white;
+    color: var(--text-colo2-2);
     padding-bottom: 8px;
     font-size: 14px;
 }
@@ -229,7 +233,7 @@ right: 2rem;
     align-self: end;
     justify-self: stretch;
     background-color: #27273980;
-    color: white;
+    color: var(--text-color-2);
     text-align: end;
     padding: 12px;
     backdrop-filter: blur(6px);
@@ -264,7 +268,7 @@ right: 2rem;
     display: block;
     background:  #b1aaaaca;
     backdrop-filter: blur(30px);
-    color:  black;
+    color:  var(--text-color-1);
     position: absolute;
     top: 200px;
     transform: scale(0);
@@ -354,7 +358,7 @@ right: 2rem;
     background: linear-gradient(375deg, var(--site-color-1), #2ede98);
   }
  .back-face .title{
-    color: #111;
+    color: var(--text-color-1);
     font-size: 30px;
     font-weight: 400;
     padding-right: 0px;
@@ -503,14 +507,14 @@ map area:hover{
 }
 
 .close{
-    color: #aaa;
+    color: var(--text-color-2);
     float: right;
     text-align: right;
     font-size: 28px;
     font-weight: bold;
 }
 .close:hover, .close:focus{
-    color: black;
+    color: var(--site-color-1);
     text-decoration: none;
     cursor: pointer;
 }
@@ -535,6 +539,7 @@ map area:hover{
     grid-template: minmax(0, 1fr) / minmax(0, 1fr);
     grid-template-areas: "stack";
     display: grid;
+    box-shadow: 4px 6px 6px var(--site-color-1);
 }
 
 #imgContainer{
@@ -549,7 +554,7 @@ map area:hover{
 .galle button{
     position: relative;
     z-index: 50;
-    color: white;
+    color: var(--text-color-2);
     border-color: transparent;
     border-radius: 30%;
     background-color: transparent;
@@ -557,13 +562,16 @@ map area:hover{
      font-size: 30px;
      top: 0;
 }
+.galle button:focus{
+    color: var(--site-color-2)
+}
 
 
 #destination{
     align-self: end;
     justify-self: stretch;
     background-color: #27273980;
-    color: white;
+    color: var(--text-color-2);
     text-align: center;
     backdrop-filter: blur(6px);
     font-size: 28px;
@@ -594,7 +602,7 @@ map area:hover{
 
 .dirrectionMe{
     cursor: pointer;
-    color: blue;
+    color: var(--site-color-2);
 }
 .secondary{
     background: linear-gradient(375deg, var(--site-color-1), var(--site-color-2));
@@ -613,7 +621,7 @@ map area:hover{
     margin-right: 10px;
 }
 .content ul li{
-    color: #111;
+    color: var(--text-color-1);
     text-align: left;
 }
 
@@ -625,7 +633,7 @@ map area:hover{
 }
 
 .content a{
-    color: blue;
+    color: var(--text-color-alternate);
 }
 .content-btn{
     padding-bottom: 20px;
@@ -637,7 +645,7 @@ map area:hover{
     justify-content: space-between;
 }
 .content-button{
-    color: blue;
+    color: var(--text-color-alternate);
     padding-right: 32px;
     padding-left: 32px;
     cursor: pointer;
@@ -716,7 +724,7 @@ map area:hover{
 .sectionContact a{
     border: 1px dashed gray;
     padding: 5px 5px 5px 5px;
-    color: blue;
+    color: var(--text-color-alternate);
 }/*-------------------------------DEV-and Project------------------------------------*/
 .containerDev{
     display: flex;
@@ -739,7 +747,6 @@ map area:hover{
     height: 500px;
     margin: 39px 10px 0px 10px;
     background-color: white;
-    
 }
 .cardD p{
     text-align: left;
@@ -748,7 +755,7 @@ map area:hover{
 
 .cardD .title{
     font-size: 28px;
-    color: #111;
+    color: var(--text-color-1);
     padding-top: 10px;
     margin-bottom: 3rem;
     margin-inline: auto;
@@ -786,7 +793,7 @@ map area:hover{
     font-size: 40px;
     border: none;
     background-color: transparent;
-    color: #111;
+    color: var(--text-color-1);
 }
 
 .btFace:hover{

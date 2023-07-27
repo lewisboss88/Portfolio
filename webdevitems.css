@@ -180,11 +180,11 @@ top: 20px;
     width: 285px;
     height: 285px;
     border-radius: 50%;
-    border: 1px solid red;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 4px 6px 6px red;
     background: conic-gradient(from -.5turn at bottom right, deeppink, cyan, rebeccapurple);
 }
 
@@ -259,6 +259,7 @@ top: 20px;
     position: relative;
     justify-content: center;
     align-items: center;
+
 }
 .center{
     width: 30px;
@@ -270,10 +271,10 @@ top: 20px;
 }
 
 .time{
-    border: 3px double red;
     margin-inline: 5px;
     padding: 5px;
     z-index: 2;
+    box-shadow: 4px 6px 6px red;
     background: conic-gradient(from .5turn at 0% 0%, #00c476, 10%, #82b0ff, 90%, #00c476);
 }
 
