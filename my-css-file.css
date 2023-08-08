@@ -266,7 +266,7 @@ right: 2rem;
     height: auto;
     min-height: 264px;
     display: block;
-    background:  #b1aaaaca;
+    background:  rgba(177, 170, 170, 0.5);
     backdrop-filter: blur(30px);
     color:  var(--text-color-1);
     position: absolute;
@@ -343,7 +343,7 @@ right: 2rem;
     justify-content: space-evenly;
     flex-direction: column;
     transform: rotateY(180deg);
-    background: #f1f1f1;
+    background: rgba(241, 241, 241, .5);
   }
 
   .sectionBar:hover > .back-face{
@@ -502,7 +502,7 @@ map area:hover{
     height: 128%;
     overflow: auto;
     align-items: center;
-    background-color: #111;
+    background-color: rgba(17, 17, 17, 0.9);
     flex-direction: column;
 }
 
@@ -588,8 +588,10 @@ map area:hover{
     display: flex;
     align-items: center;
     margin-top: 2rem;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(15px);
     border-radius: 2%;
+    box-shadow: 4px 6px 6px var(--site-color-1);
 }
 
 .content{
@@ -605,7 +607,7 @@ map area:hover{
     color: var(--site-color-2);
 }
 .secondary{
-    background: linear-gradient(375deg, var(--site-color-1), var(--site-color-2));
+    /*background: linear-gradient(375deg, var(--site-color-1), var(--site-color-2));*/
     border-radius: 3%;
     transform: scale(0) matrix(0,1,1,0,0,0);
     transition: transform 1200ms;
@@ -633,7 +635,7 @@ map area:hover{
 }
 
 .content a{
-    color: var(--text-color-alternate);
+    color: var(--site-color-2);
 }
 .content-btn{
     padding-bottom: 20px;
@@ -689,7 +691,7 @@ map area:hover{
   content: '';
   width: 200%;
   height: 200%;
-  background-color: #ffffff;
+  background-color: rgba(241, 241, 241, 0.5);
   top: -150%;
   left: -50%;
   border-radius: 40%;
