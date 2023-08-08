@@ -376,7 +376,7 @@ right: 2rem;
     height: 95%;
     margin: auto;
     overflow: auto;
-    background-color: white;
+    background-color: rgb(255, 255, 255, 0.5);
    
 }
 .worldmap img{
@@ -414,6 +414,7 @@ map area:hover{
     justify-content: center;
     align-items: center;
     position: absolute;
+    box-shadow: 4px 6px 6px var(--site-color-1);
 }
 .circle img{
     object-fit: fill;
