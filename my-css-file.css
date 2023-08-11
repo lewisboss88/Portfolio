@@ -372,16 +372,14 @@ right: 2rem;
 .worldmap{
     display: grid;
     width: 95%;
-    top: 200px;
-    height: 95%;
-    margin: auto;
+    margin-inline: auto;
+    margin-block: 4rem;
     overflow: auto;
     background-color: rgb(255, 255, 255, 0.5);
-   
+    backdrop-filter: blur(2px);
 }
 .worldmap img{
     object-fit: none;
-  
     margin: auto;
 }
 
@@ -608,7 +606,6 @@ map area:hover{
     color: var(--site-color-2);
 }
 .secondary{
-    /*background: linear-gradient(375deg, var(--site-color-1), var(--site-color-2));*/
     border-radius: 3%;
     transform: scale(0) matrix(0,1,1,0,0,0);
     transition: transform 1200ms;
@@ -648,7 +645,7 @@ map area:hover{
     justify-content: space-between;
 }
 .content-button{
-    color: var(--text-color-alternate);
+    color: var(--site-color-2);
     padding-right: 32px;
     padding-left: 32px;
     cursor: pointer;
