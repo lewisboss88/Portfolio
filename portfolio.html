@@ -233,9 +233,9 @@
                 if(top>= offset && top < offset + height){
                     sec.classList.add('animate');
                 }
-               /* else{
+                else{
                     sec.classList.remove('animate');
-                } */
+                } 
             })
         }
 
@@ -253,7 +253,10 @@
            setTimeout(()=>{textMain[1].classList.add('load-animation')}, "3500");
            setTimeout(()=>{textMain[1].classList.remove('load-animation')}, "6500");
            setTimeout(()=>{textMain[2].classList.add('load-animation')}, "7500");
-           setTimeout(()=>{textMain[2].classList.remove('load-animation')}, "12500");
+           setTimeout(()=>{textMain[2].classList.remove('load-animation');
+        if(window.innerWidth < 480){
+            textMain[0].style.display = "none";
+        }}, "12500");
         }
 
     </script>

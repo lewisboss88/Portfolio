@@ -87,11 +87,11 @@ section{
     & .logo{
        
         transform: translate(106%, -50%);
-       
         & img{
             height: 100%;
             width: 100%;
             object-fit: contain;
+            filter: drop-shadow(var(--boxshadow-set2));
         }
     }
 }
@@ -124,8 +124,15 @@ section:hover {
 @media screen and (max-width: 480px) {
     
 
+
     .portfolio{
-        background: linear-gradient(135deg, var(--color-sub1) 12%, white 42%, var(--color-sub2), var(--color-main2));
+        background: linear-gradient(
+            var(--color-main1),
+            var(--color-sub1),
+            white,
+            var(--color-sub2),
+            var(--color-main2)
+        );
         flex-direction: column-reverse;
         justify-content: space-between;
         & .title{
@@ -138,7 +145,13 @@ section:hover {
         }
     }
     .personal{
-        background: linear-gradient(135deg, var(--color-main1), var(--color-sub1), white 60%, var(--color-sub2) 89%);
+        background: linear-gradient(
+            var(--color-main1),
+            var(--color-sub1),
+            white,
+            var(--color-sub2),
+            var(--color-main2)
+        );
         flex-direction: column;
         justify-content: space-between;
         & .title{
