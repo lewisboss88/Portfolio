@@ -1,0 +1,150 @@
+:root{
+    --border--test: 1px solid red;
+    --color-main1: rgba(3, 51, 65, 1);
+    --color-main2: rgba(93, 40, 50, 1);
+    --color-sub1: rgb(19, 98, 112) ;
+    --color-sub2: rgb(154, 106, 106);
+
+    --text-small: 1rem;
+    --text-medium: 2rem;
+    --text-large: 4rem;
+    --boxshadow-set1: 4px 6px 6px var(--color-main1) ;
+    --boxshadow-set2: 4px 6px 6px var(--color-main2);
+
+    --text-shadow-double-set: var(--boxshadow-set2), var(--boxshadow-set1);
+
+
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    & ul{
+        list-style: none;
+        margin-block:37px;
+        height: fit-content;
+    }
+    & a{
+        text-decoration: none;
+        pointer-events: none;
+
+    }
+    & h1{
+        font-size: var(--text-large);
+        color: black;
+        margin: 0;
+        width: fit-content;
+        height: fit-content;
+        text-shadow: var(--text-shadow-double-set);
+    }
+    & h2{
+        font-size: var(--text-small);
+        width: fit-content;
+        height: fit-content;
+    }
+    & :is(h1, h2){
+        cursor: default;
+        pointer-events: none;
+    }
+}
+body{
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
+    
+}
+
+
+section{
+    width:  50%;
+    display: flex;
+    justify-content: center;
+    padding: 4rem;
+    border: var(--border--test);
+    overflow-x: hidden;
+    position: relative;
+    transition: 1s;
+
+}
+.logo{
+    height: 300px;
+    width: fit-content;
+    border: var(--border--test); 
+    position: absolute;
+    inset: 50% auto auto 50%;
+    transition: 1s;
+}
+
+
+
+.personal{
+    background: linear-gradient(135deg, var(--color-main1), var(--color-sub1), white 70%, var(--color-sub2) 108%);
+    flex-direction: row;
+    & h1{
+        align-self:baseline;
+    }
+    & h2{
+        align-self: flex-end;
+    }
+    & .logo{
+       
+        transform: translate(106%, -50%);
+       
+        & img{
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+}
+.portfolio{
+    background: linear-gradient(135deg, var(--color-sub1) -11%, white 24%, var(--color-sub2), var(--color-main2));
+    flex-direction: row-reverse;
+    & h1{
+        align-self: flex-end;
+    }
+    & h2{
+        align-self:baseline;
+    }
+    & .logo{
+        transform: translate(-700%, -50%);
+    }
+    
+}
+
+section:hover {
+    width: 100% ;
+    & a{
+        pointer-events: initial;
+    }
+    & .logo{
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    
+
+    .portfolio{
+        background: linear-gradient(135deg, var(--color-sub1) 12%, white 42%, var(--color-sub2), var(--color-main2));
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        & .title{
+            rotate: 270deg;
+            transform-origin: left;
+            align-self: flex-start;
+            position: relative;
+            left: 5rem;
+
+        }
+    }
+    .personal{
+        background: linear-gradient(135deg, var(--color-main1), var(--color-sub1), white 60%, var(--color-sub2) 89%);
+        flex-direction: column;
+        justify-content: space-between;
+        & .title{
+            rotate: 90deg;
+            transform-origin: left;
+        }
+    }
+
+}
