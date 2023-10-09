@@ -13,7 +13,7 @@
         <header class="header">
             <div class="logo"><h1>TsH</h1></div>
             <nav class="menu">
-                <span id="open-close-nav">&#9776;</span>
+                <span><i class="fa-solid fa-bars" id="open-close-nav"></i></span>
                 <ul>
                     <li><a href="#home">HOME</a></li>
                     <li><a href="#about">ABOUT</a></li>
@@ -133,7 +133,7 @@
         </figure>
         <figure class="projects-preview">
             <button class="open-preview"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
-            <a href="" class="open-preview"><i class="fa-solid fa-link"></i></a>
+            <a href="/kimberlys/mathews.html" class="open-preview"><i class="fa-solid fa-link"></i></a>
             <img src="/portfolio/images/matthews-bg.jpg" alt="">
             <figcaption>Recruitment website, a gateway to career opportunities. It's a platform where job seekers connect with employers, access job listings, and streamline the hiring process. Discover your dream job or find the perfect candidate with ease. <br><br> Technologies: HTML - CSS - JAVASCRIPT - PHP</figcaption>
         </figure>
@@ -243,6 +243,11 @@
 
         open_close_nav.onclick = () =>{
             nav_menu.classList.toggle("active");
+            if(open_close_nav.getAttribute("class") == "fa-solid fa-bars" ){
+                open_close_nav.setAttribute("class", "fa-solid fa-x");
+            }else{
+                open_close_nav.setAttribute("class", "fa-solid fa-bars");
+            }
 
         }
 
@@ -251,12 +256,11 @@
            textMain[0].classList.add('load-animation');
            setTimeout(()=>{textMain[0].classList.remove('load-animation')}, "3000");
            setTimeout(()=>{textMain[1].classList.add('load-animation')}, "3500");
-           setTimeout(()=>{textMain[1].classList.remove('load-animation')}, "6500");
+           setTimeout(()=>{textMain[1].classList.remove('load-animation'); if((window.innerWidth < 480) && (window.innerHeight < 860)){
+            textMain[0].style.transform = "scale(0)";
+        }}, "6500");
            setTimeout(()=>{textMain[2].classList.add('load-animation')}, "7500");
-           setTimeout(()=>{textMain[2].classList.remove('load-animation');
-        if(window.innerWidth < 480){
-            textMain[0].style.display = "none";
-        }}, "12500");
+           setTimeout(()=>{textMain[2].classList.remove('load-animation')}, "12500");
         }
 
     </script>

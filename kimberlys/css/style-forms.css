@@ -1,0 +1,157 @@
+html{
+    --color-main1: rgb(128, 128, 128);
+    --color-main2: rgb(255, 77, 0);
+    --color-backgrond: rgb(43, 43, 43);
+
+    --color-text-active1: black;
+    --color-text-active2: white;
+    --color-text-deactive: rgb(128, 128, 128);
+    --color-text-hover: var(--color-main);
+
+    --color-border: rgb(0, 0, 255);
+
+    --box-shadow-set: 4px 4px 6px var(--color-main1);
+    --box-shadow-set2: 6px 6px 8px var(--color-main2);
+
+    --gap-small: 1rem;
+    --gap-large: 2rem;
+
+    --text-small: 1rem;
+    --text-medium: 2rem;
+    --text-large: 4rem;
+    --text-weight: 600;
+    --text-font1: Arial, Helvetica, sans-serif;
+
+    --card-min-widht: 400px;
+    --card-min-height: 500px;
+    --card-img-height: 40%;
+
+    --reduction-var: 0px;
+
+   /* --border-test: 1px solid var(--color-border); */
+
+    --header-height: 100px;
+    --foooter-min-height: var(--header-height);
+}
+
+.status-register{
+    margin-block: var(--gap-small);
+
+    width: 100%;
+
+    & ul{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    & ul li{
+        padding: var(--gap-small);
+    }
+
+    &  p{
+        position: relative;
+    }
+
+    & p::after {
+        content: '';
+        width: 100%;
+        position: absolute;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: var(--color-text-active1);
+    }
+    & .position-active p{
+        color: var(--color-main2);
+    }
+
+    & .position-active p::after {
+        background-color: var(--color-main2);
+    } 
+}
+
+.job-seeker{
+    padding: var(--gap-large);
+    display: grid;
+    gap: var(--gap-large);
+    & input:not(#age, .check, #date-available){
+        width: 524px;
+    }
+    & :is(input, select){
+        box-shadow: var(--box-shadow-set);
+        border-radius: 8px;
+        height: var(--gap-large);
+        border: none;
+       
+    }
+    & :is(input:hover, input:focus, select:focus, select:hover){
+        box-shadow: var(--box-shadow-set2);
+    }
+    
+    & :is(label, input){
+        display: block;
+        margin-block: var(--gap-small);
+        
+    }
+}
+
+
+#personal-details{
+    grid-template-areas: 
+    "title ."
+    "f-name l-name"
+    "age ."
+    "number . "
+    "email confirm"
+    "addressl1 ."
+    "addressl2 addressl3"
+    " town county"
+    " postcode send"
+    ;
+
+    place-items: center;
+
+
+}
+
+.person-title{
+    grid-area: title;
+}
+
+.first-name{
+    grid-area: f-name;
+}
+.last-name{
+    grid-area: l-name;
+}
+.age{
+    grid-area: age;
+}
+.mobile-number{
+    grid-area: number;
+}
+.email{
+    grid-area: email;
+}
+.confirm-email{
+    grid-area: confirm;
+}
+.address-line1{
+    grid-area: addressl1;
+}
+.address-line2{
+    grid-area: addressl2;
+}
+.address-line3{
+    grid-area: addressl3;
+}
+.county{
+    grid-area: county;
+}
+.town{
+    grid-area: town;
+}
+.postcode{
+    grid-area: postcode;
+}

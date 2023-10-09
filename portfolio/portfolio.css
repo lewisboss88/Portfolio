@@ -127,6 +127,7 @@
        margin-left: auto;
        text-align: left;
        & span{
+        cursor: pointer;
         font-size: var(--text-medium);
         position: absolute;
         right: var(--gap-medium);
@@ -493,9 +494,9 @@
     height: 50px;
 }
 & .laser:nth-child(12){
-    top: 46px;
-    left: 206px;
-    height: 118px;
+    top: 51px;
+    left: 215px;
+    height: 108px;
     rotate: -48deg;
 }
 & .laser:nth-child(13){
@@ -511,9 +512,9 @@
     rotate: -5deg;
 }
 & .laser:nth-child(15){
-    top: 52px;
-    left: 200px;
-    height: 181px;
+    top: 57px;
+    left: 206px;
+    height: 174px;
     rotate: -27deg;
 }
 & .laser:nth-child(16){
@@ -572,8 +573,8 @@
     & .laser:nth-child(10){
         top: 58px;
         left: 160px;
-        height: 254px;
-        rotate: 14deg;
+        height: 249px;
+        rotate: 9deg;
     }
     & .laser:nth-child(11){
         top: 58px;
@@ -649,8 +650,8 @@
     & .laser:nth-child(12){
         top: 58px;
         left: 174px;
-        height: 256px;
-        rotate: 10deg;
+        height: 247px;
+        rotate: 6deg;
     }
     & .laser:nth-child(13){
         top: 58px;
@@ -778,7 +779,7 @@
 .card-offers{
     background-color: rgba(255,255,255, 0.15);
     width: 350px;
-    height: 400px;
+    height: 450px;
     border: 1px solid rgba(255,255,255, 0.18);
     box-shadow: var(--boxshadow-set2);
     border-radius: 40px;
@@ -882,7 +883,7 @@ footer{
 /*------RESPONSIVE LAYOUT AND ADJUSTMENTS -------*/
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 896px) {
     :root p:not(.exception){
         padding-inline: var(--gap-medium);
 
