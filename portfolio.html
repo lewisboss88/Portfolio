@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="/portfolio/portfolio.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
     <title>Document</title>
 </head>
 <body>
@@ -25,6 +27,7 @@
                     <li><a href="#about">ABOUT</a></li>
                     <li><a href="#projects">PROJECTS</a></li>
                     <li><a href="#offers">OFFERS</a></li>
+                    <li><a href="#contact" class="open-modal">CONTACTS</a></li>
                 </ul>
             </nav>
         </header>
@@ -47,7 +50,7 @@
             <h2 class="exception" id="text-main">Welcome to Simao's Portfolio</h2>
             <p id="text-main">Front End Developer Portfolio<br>A bit of Myself, my Skills and Personal Projects</p>
             <a href="/portfolio/file/SimaoIT_CV.pdf" download="De_Jesus_Simao_Cv">Download CV</a>
-            <a href="#contact">Enquires</a>
+            <a href="#contact" class="open-modal">Enquires</a>
         </div>
         <div class="photo-a">
             <div class="glowing-photo">
@@ -57,8 +60,23 @@
                     <rect pathLength="100" stroke-linecap="round" class="glow-line"></rect>
                 </svg>
             </div>
-            
-            <p class="exception">Every piece of art have its artist, can you separate the art from the artist? If not... here your artist</p>
+
+            <div class="carousel slide carousel-fade" id="ispiration-cit"  data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active"  data-bs-interval="5000">
+                        <p class="exception">Every piece of art have its artist, can you separate the art from the artist? If not... here your artist</p>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <p class="exception">il meglio bla bla bla</p>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <p class="exception">Lo mejor que puede hacer hoy? contactarme obvio!!</p>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <p class="exception">Vous voulez travailler avec moi?</p>
+                    </div>
+                </div>
+            </div>
 
         </div>
     </div>
@@ -132,14 +150,14 @@
         <p>Explore a curated selection of my most impactful web development projects. Each of these represents not just lines of code but a fusion of creativity, strategy, and technical prowess, showcasing the fruits of my labour and the culmination of my passion for web development.</p>
         <figure class="projects-preview">
             <button class="open-preview"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
-            <a href="https://thesimaohub.com/personal.html" target="_blank" class="open-preview"><i class="fa-solid fa-link"></i></a>
+            <button onclick="location.href='/personal.html';" target="_blank" class="open-preview"><i class="fa-solid fa-arrow-right"></i></button>
             <img src="/portfolio/images/thesimaohub-bg.jpg" alt="">
             <figcaption>My personal website, a digital treasure trove of my passions and experiences, complete with a captivating gallery showcasing the best snapshots from my travels around the world. <br><br> Technologies: HTML - CSS - JAVASCRIPT
             </figcaption>
         </figure>
         <figure class="projects-preview">
             <button class="open-preview"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
-            <a href="/kimberlys/mathews.html" class="open-preview"><i class="fa-solid fa-link"></i></a>
+            <button onclick="location.href='/kimberlys/mathews.html';" class="open-preview"><i class="fa-solid fa-arrow-right"></i></button>
             <img src="/portfolio/images/matthews-bg.jpg" alt="">
             <figcaption>Recruitment website, a gateway to career opportunities. It's a platform where job seekers connect with employers, access job listings, and streamline the hiring process. Discover your dream job or find the perfect candidate with ease. <br><br> Technologies: HTML - CSS - JAVASCRIPT - PHP</figcaption>
         </figure>
@@ -183,9 +201,8 @@
                 <li>Informative Blog Section: Share insights, tips, and industry knowledge to position yourself as an authority in your field.</li>
             </ul>
         </div>
-        <span class="separator"></span>   
-        <div class="contact" id="contact">
-            <h2>Contact Me</h2>
+        <span class="separator"></span>
+        <dialog class="contact" id="contact">
             <div class="contacts">
                 <ul class="icon">
                     <li><i class="fa-regular fa-envelope"></i></li>
@@ -196,7 +213,9 @@
                         <li><i class="fa-brands fa-linkedin"></i></li>
                     </a>
                 </ul>
-                <form action="https://formsubmit.co/30c017613639ae3cfea9e488872c2e5f " class="send-message" method="post">
+                <span class="close-modal"><i class="fa-solid fa-x"></i></span>
+                <form action="https://formsubmit.co/30c017613639ae3cfea9e488872c2e5f " class="send-message" method="dialog">
+                    <h2>Contact Me</h2>
                     <label for="">*Name
                         <input class="exception" type="text" placeholder="Name" name="Name" id="" required>
                     </label>
@@ -212,7 +231,8 @@
                     <input type="submit" value="Send">
                 </form>
             </div>
-        </div>
+        </dialog>      
+            
         
 
         <footer>
@@ -220,6 +240,8 @@
             <p style="text-align: center;">Copyright: <span id="cYear"></span> © </p> 
         </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
     <script>
         //variable declaration
         let section = document.querySelectorAll('.wraper');
@@ -227,6 +249,9 @@
         let nav_menu = document.querySelector('.menu');
         const textMain = document.querySelectorAll('#text-main');
         const year =document.querySelector("#cYear");
+        const closeContactModal = document.querySelector(".close-modal")
+        const openContactModal = document.querySelectorAll(".open-modal");
+        const modalContact =document.querySelector(".contact");
 
         year.innerHTML = new Date().getFullYear();
 
@@ -256,6 +281,22 @@
             }
 
         }
+
+        // open modal contact
+        openContactModal.forEach(openBtn => {
+            openBtn.addEventListener('click', () =>{
+                modalContact.showModal();
+            })
+        })
+       
+            
+
+            closeContactModal.addEventListener('click', () =>{
+                modalContact.close();
+            })
+            
+
+
 
         //on load animation
         window.onload =() =>{ 
