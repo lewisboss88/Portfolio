@@ -153,7 +153,7 @@
        & ul{
         position: absolute;
         right: var(--gap-small);    
-        bottom: 0;
+        margin-top: var(--gap-small);
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -161,13 +161,27 @@
         text-align: end;
         cursor: pointer;
         transition: 0.5s;
+       
        }
        & ul li{
         border: var(--border-test);
         padding: var(--gap-small);
-    
        }
+       & .subMenu{
+        margin-top: var(--gap-small);
+        max-height: 0;
+        overflow: hidden;
+        transition: .5s;
+        text-align: left;
+        transform-origin: top;
+        
+       }
+       & ul li:nth-child(2):hover .subMenu{
+        max-height: var(--gap-large);
+       }
+   
 
+    
        & a{
         color: var(--color-text-active1);
         text-decoration: none;
@@ -409,6 +423,12 @@
    
 }
 /*skills section*/
+.skills-tree{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .skills-container{
     border:var(--border-test);
     width: 350px;
