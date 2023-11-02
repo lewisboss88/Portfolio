@@ -1,4 +1,6 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+
 /* Global variable and element declaration */
 :root{
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -9,8 +11,8 @@
     --text-small: 1rem;
     --text-medium: 2rem;
     --text-large: 4rem;
-    --text-weight-normal: ;
-    --text-weight-big: ;
+    --text-weight-normal: 400;
+    --text-weight-big: 500;
     --text-spacing: ;
 
     /*color variables - all color scheme and content related properties*/
@@ -50,11 +52,15 @@
 :root h1{
     font-size: var(--text-large);
     padding-inline: var(--gap-small);
+    font-family: agbalumo, san-serif;
+    font-weight: var(--text-weight-normal);
 }
 :root h2{
     font-size: var(--text-medium);
     text-align: center;
     padding-block: var(--gap-small);
+    font-family: agbalumo;
+    font-weight: var(--text-weight-normal);
     
 }
 :root h2:not(.exception){
@@ -65,6 +71,7 @@
 :root p{
     padding-block: var(--gap-small);
     margin-inline: var(--gap-small);
+    font-weight: var(--text-weight-big);
 }
 :root p:not(.exception){
     padding-inline: var(--gap-large);
@@ -297,13 +304,16 @@
         border-radius: 8px;
         background: linear-gradient(rgba(255,255,255,0.25) 44%, rgba(255,255,255, 0.2) 57%);
         backdrop-filter: blur(5px);
-        border: var(--border-set2);
         justify-self: center;
         align-self: center;
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
-        
+        box-shadow: var(--boxshadow-set1);
+        transition: .5s;  
+      }
+      .photo-a:is(:focus, :hover){
+        box-shadow: var(--boxshadow-set2); 
       }
       
 
@@ -393,6 +403,9 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    & p{
+        background: var(--color-transparent3);
+    }
    
 }
 /*skills section*/
@@ -769,7 +782,7 @@
 .card-offers{
     background-color: rgba(255,255,255, 0.15);
     width: 350px;
-    height: 450px;
+    height: 535px;
     border: 1px solid rgba(255,255,255, 0.18);
     box-shadow: var(--boxshadow-set2);
     border-radius: 40px;
@@ -785,9 +798,28 @@
         list-style: disc;
         & li{
             padding-block: calc(var(--gap-small)/2);
-
+            cursor: default;
+            font-weight: var(--text-weight-big);
         }
     }
+    & button{
+        position: absolute;
+        border-radius: 8px;
+        background: var(--color-main1);
+        color: var(--color-text-active2);
+        padding: var(--gap-small);
+        bottom: var(--gap-small);
+        right: var(--gap-small);
+        transition: .5s;
+    }
+    & button:is(:focus, :hover){
+        box-shadow: var(--boxshadow-set2);
+        color: var(--color-sub2);
+
+    }
+}
+.card-offers:hover{
+    box-shadow: var(--boxshadow-set1);
 }
 .animate .card-offers{
     transform: scale(1) rotateZ(0);
