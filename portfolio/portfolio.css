@@ -34,6 +34,7 @@
     --gap-large: 4rem;
 
     /*sets elements - borders, boxshadows, dropshadows and other set*/
+    --border-radius: 8px;
     --border-set1: 1px solid var(--color-main2);
     --border-set2: 1px solid rgba(255,255,255, 0.18) ;
     --boxshadow-set1: 4px 6px 6px var(--color-main1) ;
@@ -251,7 +252,7 @@
         }
 
         & a{
-            border-radius: 8px;
+            border-radius: var(--border-radius);
             background: var(--color-main2);
             margin:var(--gap-small);
             color: var(--color-text-active2);
@@ -261,10 +262,13 @@
             font-weight: var(--text-weight);
             align-self: baseline;
             transition: 1s;
+            border-width: 2px;
+            border-style: outset;
+            border-color: buttonborder;
         }
         & a:is(:hover, :focus){
             box-shadow: var(--boxshadow-set1);
-           
+    
         }
         & a:nth-child(4){
             grid-area: bt1;
@@ -315,7 +319,7 @@
         grid-area: photoA;
         width: 300px;
         height: 400px;
-        border-radius: 8px;
+        border-radius: var(--border-radius);
         background: linear-gradient(rgba(255,255,255,0.25) 44%, rgba(255,255,255, 0.2) 57%);
         backdrop-filter: blur(5px);
         justify-self: center;
@@ -419,6 +423,8 @@
     justify-content: center;
     & p{
         background: var(--color-transparent3);
+        border-radius: var(--border-radius);
+        box-shadow: var(--boxshadow-set1);
     }
    
 }
@@ -427,7 +433,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 .skills-container{
     border:var(--border-test);
@@ -710,11 +716,16 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: var(--gap-medium);
+    & p{
+        background: var(--color-transparent3);
+        box-shadow: var(--boxshadow-set1);
+        border-radius: var(--border-radius);
+    }
     
 }
 .projects-preview{
     position: relative;
-    border-radius: 8px;
+    border-radius: var(--border-radius);
     width: 350px;
     height: max-content;
     box-shadow: var(--boxshadow-set1);
@@ -724,7 +735,7 @@
         width: 100%;
         height: 100%;
         object-fit: contain;
-        border-radius: 8px;
+        border-radius: var(--border-radius);
     }
     & figcaption{
         text-decoration: none;
@@ -732,7 +743,7 @@
         padding: var(--gap-small);
         display: none;
         transition: 1.5s;
-        transform: scale(0);
+        max-height: 0;
     }
     & :is(button, a){
         position: absolute;
@@ -783,7 +794,7 @@
 
     & figcaption{
        display: block;
-       transform: scale(1);
+       max-height: 15rem;
        border-radius: 0 0 8px 8px;
     }
     & img{
@@ -796,7 +807,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     background: linear-gradient(rgb(154, 106, 106),rgb(155, 89, 89),var(--color-main2));
 }
 .card-offers{
@@ -804,8 +815,8 @@
     width: 350px;
     height: 535px;
     border: 1px solid rgba(255,255,255, 0.18);
-    box-shadow: var(--boxshadow-set2);
-    border-radius: 40px;
+    box-shadow: var(--boxshadow-set1);
+    border-radius: var(--border-radius);
     margin: var(--gap-small);
     transform: scale(0) rotateZ(-180deg);
     transition: 2.5s;
@@ -824,22 +835,20 @@
     }
     & button{
         position: absolute;
-        border-radius: 8px;
+        border-radius: var(--border-radius);
         background: var(--color-main1);
         color: var(--color-text-active2);
         padding: var(--gap-small);
         bottom: var(--gap-small);
         right: var(--gap-small);
-        transition: .5s;
+        transition: 1s;
     }
     & button:is(:focus, :hover){
         box-shadow: var(--boxshadow-set2);
-        color: var(--color-sub2);
-
     }
 }
 .card-offers:hover{
-    box-shadow: var(--boxshadow-set1);
+    box-shadow: var(--boxshadow-set2);
 }
 .animate .card-offers{
     transform: scale(1) rotateZ(0);
@@ -862,11 +871,12 @@
 .contact{
   width: fit-content;
   height: fit-content;
-  border-radius: 8px;
+  border-radius: var(--border-radius);
   border: 0;
   box-shadow: 0 0 1em rgb(0 0 0 / .3);
   padding: 0;
   background: var(--color-transparent4);
+  box-shadow: var(--boxshadow-set1);
 }
 .contact[open]{
     animation: 
@@ -884,7 +894,7 @@
     border: var(--border-test);
     flex-direction: row;
     width: max-content;
-    border-radius: 8px;
+    border-radius: var(--border-radius);
     background: linear-gradient(45deg, var(--color-transparent2), var(--color-transparent1));
     & .close-modal{
         position: absolute;
@@ -905,7 +915,7 @@
         flex-direction: column;
         font-size: var(--gap-small);
         & :is(input, textarea){
-            border-radius: 8px;
+            border-radius: var(--border-radius);
             width: 300px;
         }
         & :is(input:hover, input:focus, textarea:hover, textarea:focus){
@@ -918,11 +928,13 @@
         background: var(--color-main1);
         color: var(--color-text-active2);
         padding: var(--gap-small);
-        border-radius: 8px;
+        border-radius: var(--border-radius);
+        border-width: 2px;
+        border-style: outset;
+        border-color: buttonborder;
         transition: 1s;
     }
     & input:is(:focus, :hover):not(.exception){
-        color: var(--color-main2);
         box-shadow: var(--boxshadow-set2);
     } 
 }
@@ -952,8 +964,14 @@
 
 footer{
     width: 100%;
-    & p{
+    background: var(--color-main2);
+    filter: drop-shadow(2px 4px 6px black);
+    
+
+    text-align: center;
+    & p:nth-child(1){
         width: 100%;
+        margin-bottom: 0;
     }
 }
 
@@ -965,7 +983,12 @@ footer{
         padding-inline: var(--gap-medium);
 
     }
-    
+    .logo{
+        & h1{
+
+            margin-block: 0;
+        }
+    }
     .home{
         grid-template-areas:
         "header"
@@ -974,6 +997,7 @@ footer{
         "photoA";
     }
     .menu{
+        z-index: 2;
         & span{
             display: inline;
         }
@@ -994,6 +1018,10 @@ footer{
             background-color: var(--color-transparent2);
             backdrop-filter: blur(6px);
         }
+        & ul li .subMenu{
+            max-height: var(--gap-medium);
+            text-align: end;
+        }
     }
     .active ul{
         scale: 1;
@@ -1013,7 +1041,7 @@ footer{
 
   
     .projects-preview{
-        & button{
+        & button:nth-child(1){
             inset: 39% auto auto 43%;
             transform: 
             scale(1);
@@ -1024,8 +1052,9 @@ footer{
         & button{
             transform: scale(0);
         }
-    
-
+    }
+    .projects-preview:has(.open-preview:nth-child(1):focus) {
+        transform: scale(1.1);
     }
 
     .contacts{
