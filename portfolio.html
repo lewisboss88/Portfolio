@@ -9,31 +9,43 @@
     <meta property="og:image" content="icon1.jfif">
     <meta property="og:description" content="this website is the base for Simao De Jesus portfolio website">
     <meta property="og:title" content="De Jesus Simao Portfolio.">
+    <!-- main CSS  -->
     <link rel="stylesheet" href="/portfolio/portfolio.css">
+    <!-- reset CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font-Awesome integration CSS, external icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Bootstrap 5.3.2 integration CSS -->
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">   
     <title>Document</title>
 </head>
 <body>
+    <!--landing page section  -->
     <div class="wraper home" id="home">
+        <!-- header containing logo and menu -->
         <header class="header">
             <div class="logo"><h1>TsH</h1></div>
             <nav class="menu">
+                <!-- burger for responsive menu  -->
                 <span><i class="fa-solid fa-bars" id="open-close-nav"></i></span>
+                <!-- menu, ordinate list -->
                 <ul>
                     <li><a href="#home">HOME</a></li>
+                    <!-- dropdown menu for skills -->
                     <li><div class="dropdown"><a href="#about">ABOUT </a><i class="fas fa-caret-down"></i>
                         <div class="subMenu"><a  href="#skills-tree">SKILLS</a></div>
                         </div></li>
                     <li><a href="#projects">PROJECTS</a></li>
                     <li><a href="#offers">OFFERS</a></li>
+                    <!-- link to open contact modal -->
                     <li><a href="#contact" class="open-modal">CONTACTS</a></li>
                 </ul>
             </nav>
         </header>
+        <!-- main title, fancy words with letters animation -->
         <div class="title-website">
-            <h1 id="text-main">
+            <h1 id="text-main">  
+                <!-- every letter can be handle and move indipendetly, is all kept together by the H1 container  -->
                 <span class="letter">T</span>
                 <span class="letter">h</span>
                 <span class="letter">e</span>
@@ -48,39 +60,46 @@
                 <span class="letter">u</span>
                 <span class="letter">b</span>
             </h1>
+            <!-- secondary title -->
             <h2 class="exception" id="text-main">Welcome to Simao's Portfolio</h2>
+            <!-- short introduction -->
             <p id="text-main">Front End Developer Portfolio<br>A bit of Myself, my Skills and Personal Projects</p>
+            <!-- link to download CV file -->
             <a href="/portfolio/file/SimaoIT_CV.pdf" download="De_Jesus_Simao_Cv">Download CV</a>
+            <!-- link to open contact modal -->
             <a href="#contact" class="open-modal">Enquires</a>
         </div>
+        <!-- photo card -->
         <div class="photo-a">
             <div class="glowing-photo">
+                <!-- my picture -->
                 <img src="/me/meviews.jpg" alt="">
+                <!-- svg for rotation laser animation  -->
                 <svg class="glow-container">
                     <rect pathLength="100" stroke-linecap="round" class="glow-blur"></rect>
                     <rect pathLength="100" stroke-linecap="round" class="glow-line"></rect>
                 </svg>
             </div>
-
+            <!-- carousel with rotating text every 3s -->
             <div class="carousel slide carousel-fade" id="ispiration-cit"  data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active"  data-bs-interval="5000">
+                    <div class="carousel-item active"  data-bs-interval="3000">
                         <p class="exception">Every piece of art have its artist, can you separate the art from the artist? If not... here your artist, contact me!!</p>
                     </div>
-                    <div class="carousel-item" data-bs-interval="5000">
+                    <div class="carousel-item" data-bs-interval="3000">
                         <p class="exception">Se nel mezzo del cammino della tua vita, ti ritrovi perso e senza un sito, e' il momento giusto per per contattarmi!! </p>
                     </div>
-                    <div class="carousel-item" data-bs-interval="5000">
+                    <div class="carousel-item" data-bs-interval="3000">
                         <p class="exception">Lo mejor que puede hacer hoy? contactarme obvio!!</p>
                     </div>
-                    <div class="carousel-item" data-bs-interval="5000">
+                    <div class="carousel-item" data-bs-interval="3000">
                         <p class="exception">Vous voulez travailler avec moi? Ne t'inquiète pas, je ne mords pas!</p>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
+    <!--About section  -->
     <div class="wraper about" id="about">
         <h2>About Me</h2>
         <p>Hello there! <br><br>
@@ -91,10 +110,13 @@
         <br><br>My multicultural background, technical prowess, and insatiable curiosity have sculpted me into a versatile developer. I'm here not just to write code, but to create digital wonders and bring innovative solutions to life. So, whether it's designing the perfect user interface or delving deep into the backend, I'm Simao, and I'm here to make the digital world a better, more personal place, one line of code at a time.
         <br><br>Down below some of my most key skills and competences:</p>
     </div>
+    <!-- Skills section -->
     <div class="wraper skills-tree" id="skills-tree">
         <h2>Skills & Competences </h2>
         <span class="separator"></span>
+        <!-- container for skills, skills bubble are fixed in position, laser expands to connect the bubble from scale 0 to 1, when the section is on the screen point of view -->
         <div class="skills-container" id="coding">
+            <!-- skill elements -->
             <div class="skill-title">CODING</div>
             <div class="skill-title">HTML</div>
             <div class="skill-title">CSS</div>
@@ -104,6 +126,7 @@
             <div class="skill-title">PHP</div>
             <div class="skill-title">JAVA</div>
             <div class="skill-title">C++</div>
+            <!-- laser elements -->
             <div class="laser"></div>
             <div class="laser"></div>
             <div class="laser"></div>
@@ -114,6 +137,7 @@
             <div class="laser"></div>
         </div>
         <div class="skills-container"id="it">
+            <!-- skill elements -->
             <div class="skill-title">KNOWLEDGE</div> 
             <div class="skill-title">UI/UX</div> 
             <div class="skill-title">DEV LIFECICLE</div> 
@@ -121,6 +145,7 @@
             <div class="skill-title">LINUX OS</div> 
             <div class="skill-title">M OFFICE</div> 
             <div class="skill-title">GIT</div> 
+            <!-- laser elements -->
             <div class="laser"></div>
             <div class="laser"></div>
             <div class="laser"></div>
@@ -129,6 +154,7 @@
             <div class="laser"></div>
         </div>
         <div class="skills-container" id="others"> 
+            <!-- skill elements -->
             <div class="skill-title">OTHER SKILLS</div> 
             <div class="skill-title">ENGLISH</div> 
             <div class="skill-title">ITALIAN</div> 
@@ -137,6 +163,7 @@
             <div class="skill-title">TEAM PLAYER</div> 
             <div class="skill-title">PROBLEM SOLVER</div> 
             <div class="skill-title">FAST LEARNER</div> 
+            <!-- laser elements -->
             <div class="laser"></div>
             <div class="laser"></div>
             <div class="laser"></div>
@@ -146,9 +173,11 @@
             <div class="laser"></div>
         </div>
     </div>
+    <!-- Project section -->
     <div class="wraper projects" id="projects">
         <h2>My Projects</h2>
         <p>Explore a curated selection of my most impactful web development projects. Each of these represents not just lines of code but a fusion of creativity, strategy, and technical prowess, showcasing the fruits of my labour and the culmination of my passion for web development.</p>
+        <!-- preview of projects -->
         <figure class="projects-preview">
             <button class="open-preview"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
             <button onclick="location.href='/personal.html';" target="_blank" class="open-preview"><i class="fa-solid fa-arrow-right"></i></button>
@@ -171,6 +200,7 @@
             <figcaption></figcaption>
         </figure>
     </div>
+    <!-- offers container -->
     <div class="wraper offers" id="offers">
         <h2>Offers</h2>
         <span class="separator"></span>
@@ -182,6 +212,7 @@
                 <li>Blogs and Insights: Share your knowledge, passions, and experiences through captivating blog posts.</li>
                 <li>Resume/CV: Impress recruiters and employers with an always-updated online resume.</li>
             </ul>
+            <!-- link to open contact modal -->
             <button class="open-modal">Contact Me</button>
         </div>
         <div class="card-offers">
@@ -192,6 +223,7 @@
                 <li> E-Commerce Ready: integrate your product catalog, payments, and inventory management for a streamlined shopping experience.</li>
                 <li>Mobile-Optimized: captivate customers on any device with a responsive design that ensures a seamless browsing experience.</li>
             </ul>
+            <!-- link to open contact modal -->
             <button class="open-modal">Contact Me</button>
         </div>
         <div class="card-offers">
@@ -202,10 +234,13 @@
                 <li>Contact & Inquiry Forms: Make it easy for potential clients to get in touch with you. Capture inquiries effortlessly and respond promptly.</li>
                 <li>Informative Blog Section: Share insights, tips, and industry knowledge to position yourself as an authority in your field.</li>
             </ul>
+            <!-- link to open contact modal -->
             <button class="open-modal">Contact Me</button>
         </div>
         <span class="separator"></span>
+        <!-- dialog for the contact form -->
         <dialog class="contact" id="contact">
+            <!-- connection list -->
             <div class="contacts">
                 <ul class="icon">
                     <li><i class="fa-regular fa-envelope"></i></li>
@@ -216,7 +251,9 @@
                         <li><i class="fa-brands fa-linkedin"></i></li>
                     </a>
                 </ul>
+                <!-- closing modal icon -->
                 <span class="close-modal"><i class="fa-solid fa-x"></i></span>
+                <!-- contact form -->
                 <form action="https://formsubmit.co/30c017613639ae3cfea9e488872c2e5f " class="send-message" method="dialog">
                     <h2>Contact Me</h2>
                     <label for="">*Name
@@ -244,28 +281,29 @@
 
     <script>
         //variable declaration
-        let section = document.querySelectorAll('.wraper');
-        let open_close_nav = document.querySelector('#open-close-nav');
-        let nav_menu = document.querySelector('.menu');
-        const textMain = document.querySelectorAll('#text-main');
-        const year =document.querySelector("#cYear");
-        const closeContactModal = document.querySelector(".close-modal")
-        const openContactModal = document.querySelectorAll(".open-modal");
-        const modalContact =document.querySelector(".contact");
+        
+        let section = document.querySelectorAll('.wraper'); // connect al the section to js
+        let open_close_nav = document.querySelector('#open-close-nav');  // connection to menu open button 
+        let nav_menu = document.querySelector('.menu'); // connection to menu
+        const textMain = document.querySelectorAll('#text-main'); // connection to fancywords 
+        const year =document.querySelector("#cYear"); // connection to year span, in footer
+        const closeContactModal = document.querySelector(".close-modal") // connection closing modal button
+        const openContactModal = document.querySelectorAll(".open-modal"); // connection to open modal links and button
+        const modalContact =document.querySelector(".contact"); // connection to modal connect
 
-        year.innerHTML = new Date().getFullYear();
-
+        year.innerHTML = new Date().getFullYear();  // date function
+        // function to control point of view of the screen  
         window.onscroll=()=>{
             section.forEach(sec =>{
                 let top = window.scrollY;
-                let offset = sec.offsetTop -400;
+                let offset = sec.offsetTop -400; //tarting offset controll 
                 let height = sec.offsetHeight;
 
                 if(top>= offset && top < offset + height){
-                    sec.classList.add('animate');
+                    sec.classList.add('animate');  // add class animate to wraper that cover screen point of view
                 }
                 else{
-                    sec.classList.remove('animate');
+                    sec.classList.remove('animate');  // remove class animate when wraper move out of point of view
                 } 
             })
         }
@@ -274,8 +312,9 @@
 
         open_close_nav.onclick = () =>{
             nav_menu.classList.toggle("active");
+            //check for burger or X icon 
             if(open_close_nav.getAttribute("class") == "fa-solid fa-bars" ){
-                open_close_nav.setAttribute("class", "fa-solid fa-x");
+                open_close_nav.setAttribute("class", "fa-solid fa-x"); 
             }else{
                 open_close_nav.setAttribute("class", "fa-solid fa-bars");
             }
@@ -288,15 +327,10 @@
                 modalContact.showModal();
             })
         })
-       
+        closeContactModal.addEventListener('click', () =>{
+            modalContact.close();
+        })
             
-
-            closeContactModal.addEventListener('click', () =>{
-                modalContact.close();
-            })
-            
-
-
 
         //on load animation
         window.onload =() =>{ 
